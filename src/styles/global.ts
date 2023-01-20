@@ -15,9 +15,11 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-weight: 500;
     font-family: 'Space Grotesk', sans-serif;
+    color: ${(props) => props.theme.colors.black};
+    font-size: ${(props) => props.theme.sizes['16px']};
+    -webkit-font-smoothing: antialiased;
+
     background-color: ${(props) => props.theme.colors['white-1']};
-    color: #1F1F26;
-    -webkit-font-smoothing: antialiased
   }
 
   ul, li {

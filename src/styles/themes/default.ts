@@ -16,6 +16,9 @@ export const defaultTheme = {
     'grey-2': '#6C7188',
     'grey-3': '#DADCE2'
   },
+  shadow: {
+    button: 'rgba(246, 87, 20, 0.3)'
+  },
   sizes: {
     '11px': '0.688rem',
     '13px': '0.813rem',
