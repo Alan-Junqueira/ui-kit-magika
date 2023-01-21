@@ -8,9 +8,9 @@ export interface IListProps extends React.HTMLAttributes<HTMLDivElement> {
   label: string
 }
 
-export const List = ({label, variant}: IListProps) => {
+export const List = ({label, variant, ...props}: IListProps) => {
   return (
-    <ListContainer variant={variant}>
+    <ListContainer variant={variant} {...props}>
       <img src={listPolygon} alt="" />
       <span>{label}</span>
     </ListContainer>

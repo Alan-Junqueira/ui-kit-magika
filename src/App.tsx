@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components';
+import { AwardsIcon } from './components/AwardsIcon';
 import { Banner } from './components/Banner';
 import { List } from './components/List';
 import { NavBar } from './components/partials/NavBar';
@@ -10,7 +11,7 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <NavBar />
-      <List label='World Class' variant='sm'/>
+      <AwardsIcon variant='third'/>
     </ThemeProvider>
   );
 }
