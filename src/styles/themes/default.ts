@@ -1,5 +1,6 @@
 export const defaultTheme = {
   colors: {
+    dark: '#000000',
     black: '#060919',
     primary:
       'radial-gradient(127.68% 423.02% at 31.82% -13.39%, #FF9B00 12.5%, #ED1C24 100%)',
@@ -24,6 +25,7 @@ export const defaultTheme = {
   sizes: {
     '11px': '0.688rem',
     '13px': '0.813rem',
+    '14px': '0.875rem',
     '16px': '1rem',
     '18px': '1.125rem',
     '21px': '1.313rem',
