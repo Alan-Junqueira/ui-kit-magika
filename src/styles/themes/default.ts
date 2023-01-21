@@ -14,7 +14,9 @@ export const defaultTheme = {
     'brand-3': '#FF9B00',
     'grey-1': '#3E4150',
     'grey-2': '#6C7188',
-    'grey-3': '#DADCE2'
+    'grey-3': '#DADCE2',
+    'banner-secondary':
+      'radial-gradient(127.68% 423.02% at 31.82% -13.39%, #FFE600 12.5%, #FF9702 100%)'
   },
   shadow: {
     button: 'rgba(246, 87, 20, 0.3)'
@@ -27,8 +29,10 @@ export const defaultTheme = {
     '21px': '1.313rem',
     '24px': '1.5rem',
     '28px': '1.75rem',
+    '30px': '1.875rem',
     '32px': '2rem',
     '36px': '2.25rem',
+    '40px': '2.5rem',
     '42px': '2.625rem',
     '48px': '3rem',
     '52px': '3.25rem',

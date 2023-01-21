@@ -9,11 +9,11 @@ export const NavBarContainer = styled.nav`
 
   background-color: ${(props) => props.theme.colors.black};
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1199px) {
     padding: 24px 72px;
   }
 
-  @media (max-width: 376px) {
+  @media (max-width: 970px) {
     padding: 24px;
   }
 
@@ -36,11 +36,11 @@ export const NavBarContainer = styled.nav`
 
     color: ${(props) => props.theme.colors['white-1']};
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1199px) {
       margin-inline: 40px;
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 970px) {
       display: none;
     }
 
@@ -67,12 +67,12 @@ export const NavBarContainer = styled.nav`
   }
 
   > button.desktop {
-    @media (max-width: 1024px) {
+    @media (max-width: 1199px) {
       display: none;
     }
   }
   > button.tablet {
-    @media (min-width: 1025px) {
+    @media (min-width: 1200px) {
       display: none;
     }
   }
