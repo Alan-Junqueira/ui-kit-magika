@@ -14,6 +14,8 @@ export const ButtonContainer = styled.button<IButtonContainer>`
   box-shadow: 0px 15px 36px ${(props) => props.theme.shadow.button};
   border-radius: 60px;
 
+  max-width: fit-content;
+
   img {
     display: none;
   }
