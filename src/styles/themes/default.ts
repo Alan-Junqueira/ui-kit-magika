@@ -21,12 +21,15 @@ export const defaultTheme = {
 
     'yellow-100': '#FBDD00',
     'yellow-200': '#FFC700',
-    'gray-500': '#bababa'
+    'gray-500': '#bababa',
+    'gray-600': '#181818'
   },
   shadow: {
     button: 'rgba(246, 87, 20, 0.3)'
   },
   sizes: {
+    '9px': '0.563rem',
+    '10px': '0.625rem',
     '11px': '0.688rem',
     '13px': '0.813rem',
     '14px': '0.875rem',
@@ -47,6 +50,7 @@ export const defaultTheme = {
     '64px': '4rem',
     '70px': '4.375rem',
     '80px': '5rem',
+    '100px': '6.25rem',
     '110px': '6.875rem',
     '240px': '15rem',
     '268px': '16.75rem',

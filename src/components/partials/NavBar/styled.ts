@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const NavBarContainer = styled.nav`
+export const NavBarContainer = styled.header`
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: ${(props) => props.theme.colors.black};
 `;
 
-export const NavBarContent = styled.div`
+export const NavBarContent = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +15,7 @@ export const NavBarContent = styled.div`
   padding: 40px 152px;
 
   width: 100%;
-  max-width: 1440px;
+  max-width: 1600px;
 
   @media (max-width: 1199px) {
     padding: 24px 72px;

@@ -21,8 +21,10 @@ export const BannerContainer = styled.div<IBannerProps>`
 
   color: #060919;
 
+  width: 130%;
   height: 130px;
   padding-block: 36px;
+
 
   @media (max-width: 1290px) {
     font-size: ${(props) => props.theme.sizes['40px']};

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import { NavBar } from './components/partials/NavBar';
@@ -7,7 +7,7 @@ import { NotFound } from './pages/NotFound';
 import { GlobalStyle } from './styles/global';
 import { defaultTheme } from './styles/themes/default';
 
-import article1 from '/assets/images/article-1.png';
+import Routes from './routes';
 
 function App() {
   return (
@@ -15,9 +15,7 @@ function App() {
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyle />
         <NavBar />
-        <Routes>
-          <Route path='*' element={<NotFound />} />
-        </Routes>
+        <Routes />
       </ThemeProvider>
     </BrowserRouter>
   );
