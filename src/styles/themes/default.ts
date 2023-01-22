@@ -20,6 +20,7 @@ export const defaultTheme = {
       'radial-gradient(127.68% 423.02% at 31.82% -13.39%, #FFE600 12.5%, #FF9702 100%)',
 
     'yellow-100': '#FBDD00',
+    'yellow-200': '#FFC700',
     'gray-500': '#bababa'
   },
   shadow: {
@@ -45,6 +46,11 @@ export const defaultTheme = {
     '60px': '3.75rem',
     '64px': '4rem',
     '70px': '4.375rem',
-    '80px': '5rem'
+    '80px': '5rem',
+    '110px': '6.875rem',
+    '240px': '15rem',
+    '268px': '16.75rem',
+    '300px': '18.75rem',
+    '370px': '23.125rem'
   }
 } as const;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../../Button';
 import { NavBarContainer, NavBarContent } from './styled';
 
@@ -11,19 +12,19 @@ export const NavBar = () => {
         <img src={logo} alt="" />
         <ul>
           <li>
-            <a href="">Our Programs</a>
+            <Link to="/">Our Programs</Link>
           </li>
           <li>
-            <a href="">Awards</a>
+            <Link to="/">Awards</Link>
           </li>
           <li>
-            <a href="">About Us</a>
+            <Link to="/">About Us</Link>
           </li>
           <li>
-            <a href="">Article</a>
+            <Link to="/">Article</Link>
           </li>
           <li>
-            <a href="">Contact Us</a>
+            <Link to="/">Contact Us</Link>
           </li>
         </ul>
 
