@@ -19,7 +19,8 @@ export const defaultTheme = {
     'banner-secondary':
       'radial-gradient(127.68% 423.02% at 31.82% -13.39%, #FFE600 12.5%, #FF9702 100%)',
 
-    'yellow-100': '#FBDD00'
+    'yellow-100': '#FBDD00',
+    'gray-500': '#bababa'
   },
   shadow: {
     button: 'rgba(246, 87, 20, 0.3)'

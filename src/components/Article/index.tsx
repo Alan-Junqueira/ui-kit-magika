@@ -10,8 +10,8 @@ interface IArticle extends React.HTMLAttributes<HTMLDivElement> {
 
 export const Article = ({ title, description, image, ...props }: IArticle) => {
   return (
-    <ArticleContainer {...props}>
-      <img src={image} alt="" />
+    <ArticleContainer {...props} image={image}>
+      <div></div>
       <section id="article-info">
         <h2>{title}</h2>
         <p>{description}</p>

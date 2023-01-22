@@ -3,11 +3,19 @@ import styled from 'styled-components';
 export const NavBarContainer = styled.nav`
   display: flex;
   align-items: center;
+  flex-direction: column;
+  background-color: ${(props) => props.theme.colors.black};
+`;
+
+export const NavBarContent = styled.div`
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 
   padding: 40px 152px;
 
-  background-color: ${(props) => props.theme.colors.black};
+  width: 100%;
+  max-width: 1440px;
 
   @media (max-width: 1199px) {
     padding: 24px 72px;
