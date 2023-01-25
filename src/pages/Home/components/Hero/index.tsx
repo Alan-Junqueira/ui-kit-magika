@@ -52,8 +52,8 @@ export const HomeHero = () => {
           </div>
         </div>
       </HomeHeroContent>
+      <Banner variant="primary" className="rotate-right" delay={10} />
       <Banner variant="primary" className="rotate-left" />
-      <Banner variant="primary" className="rotate-right" />
     </HomeHeroContainer>
   );
 };

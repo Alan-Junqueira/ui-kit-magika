@@ -21,7 +21,7 @@ export const NavBarContent = styled.nav`
     padding: 24px 72px;
   }
 
-  @media (max-width: 970px) {
+  @media (max-width: 425px) {
     padding: 24px;
   }
 

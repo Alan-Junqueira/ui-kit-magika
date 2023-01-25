@@ -8,6 +8,7 @@ import { GlobalStyle } from './styles/global';
 import { defaultTheme } from './styles/themes/default';
 
 import Routes from './routes';
+import { Footer } from './components/partials/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <GlobalStyle />
         <NavBar />
         <Routes />
+        <Footer />
       </ThemeProvider>
     </BrowserRouter>
   );

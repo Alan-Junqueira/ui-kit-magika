@@ -57,6 +57,7 @@ export const BannerContainer = styled.div<IBannerProps>`
     animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-delay: -${props => props.delay}s;
 
     @keyframes animateBanner {
       from {
