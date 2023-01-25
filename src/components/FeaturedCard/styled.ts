@@ -12,6 +12,10 @@ export const FeaturedCardContainer = styled.div<FeaturedCardContainerProps>`
   max-width: 315px;
   width: 100%;
 
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
+
   div {
     display: flex;
     align-items: center;
@@ -45,5 +49,16 @@ export const FeaturedCardContainer = styled.div<FeaturedCardContainerProps>`
     line-height: 28px;
 
     color: ${(props) => props.theme.colors.black};
+
+    @media (max-width: 425px) {
+      text-align: center;
+      max-width: 240px;
+      width: 100%;
+    }
+
+    @media (max-width: 1199px) {
+      max-width: 257pxpx;
+      width: 100%;
+    }
   }
 `;

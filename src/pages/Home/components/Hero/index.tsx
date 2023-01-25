@@ -11,9 +11,11 @@ import homeHeroGirl from '/assets/images/home-hero-girl.png';
 import homeHeroTestimonial1 from '/assets/images/home-hero-testimonial1.png';
 import homeHeroTestimonial2 from '/assets/images/home-hero-testimonial2.png';
 
-export const HomeHero = () => {
+interface IHomeHero extends React.HTMLAttributes<HTMLDivElement> {}
+
+export const HomeHero = ({ ...props }: IHomeHero) => {
   return (
-    <HomeHeroContainer>
+    <HomeHeroContainer {...props}>
       <HomeHeroContent>
         <main>
           <h1>Gen-z as modern world pillars</h1>

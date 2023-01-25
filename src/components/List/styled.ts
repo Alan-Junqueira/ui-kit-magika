@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 type ListContainerProps = {
-  variant?: 'sm' | 'md' | 'lg';
+  variant: 'sm' | 'md' | 'lg';
 };
 
 export const ListContainer = styled.div<ListContainerProps>`

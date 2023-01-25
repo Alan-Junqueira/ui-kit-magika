@@ -4,7 +4,7 @@ import { ListContainer } from './styled'
 import listPolygon from '/assets/images/list-polygon.svg'
 
 export interface IListProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: 'sm'| 'md'| 'lg',
+  variant: 'sm'| 'md'| 'lg',
   label: string
 }
 

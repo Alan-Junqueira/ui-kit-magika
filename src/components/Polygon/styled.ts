@@ -40,12 +40,20 @@ export const PolygonContainer = styled.div<PolygonProps>`
   /* animation-timing-function: linear; */
 
   @keyframes opacityAnimaiton {
-    from {
+    0% {
       opacity: 0;
+      transform: rotate(45deg) scale(0);
     }
 
-    to {
+    50% {
       opacity: 1;
+      transform: rotate(45deg) scale(1);
+
+    }
+
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) scale(0);
     }
   }
 
