@@ -21,7 +21,7 @@ export const SpecifyTheTime = ({ ...props }: ISpecifyTheTime) => {
           </p>
           <Button label="Get Started" variant="big" />
         </div>
-        <div className="womanImage">
+        <div className="menImage">
           <img src={menImage} alt="" />
           <Polygon variant="blue" left={15} top={25} />
           <Polygon variant="orange" right={0} bottom={8} />

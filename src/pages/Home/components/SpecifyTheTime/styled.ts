@@ -1,18 +1,26 @@
 import styled from 'styled-components';
 
-export const SpecifyTheTimeContainer = styled.section``;
+export const SpecifyTheTimeContainer = styled.section`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 
 export const SpecifyTheTimeContent = styled.div`
   display: flex;
+  max-width: 1600px;
 
   @media (max-width: 425px) {
     flex-direction: column;
+
     gap: 32px;
     padding: 56px 24px;
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'image' 'description';
     gap: 32px;
     padding: 56px 24px;
   }
@@ -31,10 +39,14 @@ export const SpecifyTheTimeContent = styled.div`
     padding: 72px 136px 86px 152px;
   }
 
-  > div.womanImage {
+  > div.menImage {
     position: relative;
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      grid-area: image;
+    }
 
     img {
       width: 100%;
@@ -46,6 +58,10 @@ export const SpecifyTheTimeContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      grid-area: description;
+    }
 
     h2 {
       font-weight: 700;

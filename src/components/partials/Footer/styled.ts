@@ -10,6 +10,7 @@ export const FooterContainer = styled.footer`
 
 export const FooterContent = styled.div`
   padding: 72px 120px;
+  max-width: 1600px;
   width: 100%;
 
   @media (min-width: 1200px) {

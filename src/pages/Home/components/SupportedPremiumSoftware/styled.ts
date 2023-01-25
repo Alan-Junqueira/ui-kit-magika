@@ -1,12 +1,29 @@
 import styled from 'styled-components';
 
-export const OnlineDataAnalyticalContainer = styled.section`
-    display: flex;
+export const SupportedPremiumSoftwareContainer = styled.section`
+  display: flex;
   align-items: center;
   flex-direction: column;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 62%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 156, 1, 0.22) 0%,
+      rgba(251, 184, 78, 0) 100%
+    );
+    opacity: 0.7;
+  }
 `;
 
-export const OnlineDataAnalyticalContent = styled.div`
+export const SupportedPremiumSoftwareContent = styled.div`
   display: flex;
   max-width: 1600px;
 
@@ -24,19 +41,19 @@ export const OnlineDataAnalyticalContent = styled.div`
 
   @media (min-width: 769px) and (max-width: 1199px) {
     display: grid;
-    grid-template-columns: 45% 1fr;
+    grid-template-columns: 40% 1fr;
     gap: 64px;
-    padding: 72px 59px;
+    padding: 56px 72px;
   }
 
   @media (min-width: 1200px) {
     display: grid;
-    grid-template-columns: 45% 1fr;
+    grid-template-columns: 40% 1fr;
     gap: 106px;
-    padding: 72px 136px 86px 152px;
+    padding: 164px 152px 122px 152px;
   }
 
-  > div.womanImage {
+  > div.softwaresImage {
     position: relative;
     display: flex;
     align-items: center;
@@ -101,32 +118,6 @@ export const OnlineDataAnalyticalContent = styled.div`
 
         opacity: 0.7;
         color: ${(props) => props.theme.colors.black};
-      }
-    }
-
-    > div.polygons {
-      display: grid;
-      gap: 24px;
-      justify-content: space-between;
-
-      @media (max-width: 425px) {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      @media (min-width: 426px) and (max-width: 768px) {
-        grid-template-columns: 1fr 195px;
-      }
-
-      @media (min-width: 769px) and (max-width: 960px) {
-        grid-template-columns: 1fr;
-      }
-
-      @media (min-width: 961px) and (max-width: 1199px) {
-        grid-template-columns: 1fr 195px;
-      }
-
-      @media (min-width: 1200px) {
-        grid-template-columns: 1fr 195px;
       }
     }
   }
