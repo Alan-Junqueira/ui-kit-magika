@@ -1,7 +1,5 @@
 import React from 'react';
 import { Button } from '../../../../components/Button';
-import { List } from '../../../../components/List';
-import { Polygon } from '../../../../components/Polygon';
 import {
   SupportedPremiumSoftwareContainer,
   SupportedPremiumSoftwareContent

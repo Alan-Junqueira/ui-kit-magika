@@ -3,6 +3,7 @@ import { FeatureIcons } from './components/FeatureIcons';
 import { HomeHero } from './components/Hero';
 import { OnlineDataAnalytical } from './components/OnlineDataAnalytical';
 import { SpecifyTheTime } from './components/SpecifyTheTime';
+import { Steps } from './components/Steps';
 import { SupportedPremiumSoftware } from './components/SupportedPremiumSoftware';
 
 export const Home = () => {
@@ -13,6 +14,7 @@ export const Home = () => {
       <OnlineDataAnalytical id="online-data-analytical" />
       <SpecifyTheTime id="specify-the-time" />
       <SupportedPremiumSoftware id="supported-premium-software" />
+      <Steps id="steps" />
     </>
   );
 };

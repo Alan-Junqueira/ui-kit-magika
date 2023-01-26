@@ -93,7 +93,7 @@ export const Footer = () => {
             </li>
           </ul>
         </FooterNavigation>
-        <p><div></div> © Designed by Magika.Studio</p>
+        <p> © Designed by Magika.Studio</p>
       </FooterContent>
     </FooterContainer>
   );

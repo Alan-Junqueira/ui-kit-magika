@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 
 type ListContainerProps = {
-  variant: 'sm' | 'md' | 'lg';
+  variant: 'sm' | 'sm-2' | 'md' | 'lg';
+  color: 'light' | 'dark';
 };
 
 export const ListContainer = styled.div<ListContainerProps>`
@@ -15,13 +16,30 @@ export const ListContainer = styled.div<ListContainerProps>`
   }
 
   span {
-    color: ${(props) => props.theme.colors.dark};
+    ${(props) =>
+      props.color === 'dark' &&
+      css`
+        color: ${(props) => props.theme.colors.dark};
+      `};
+
+    ${(props) =>
+      props.color === 'light' &&
+      css`
+        color: ${(props) => props.theme.colors['white-1']};
+      `};
 
     ${(props) =>
       props.variant === 'sm' &&
       css`
         font-size: ${(props) => props.theme.sizes['14px']};
         line-height: 24px;
+      `};
+
+    ${(props) =>
+      props.variant === 'sm-2' &&
+      css`
+        font-size: ${(props) => props.theme.sizes['16px']};
+        line-height: 26px;
       `};
     ${(props) =>
       props.variant === 'md' &&

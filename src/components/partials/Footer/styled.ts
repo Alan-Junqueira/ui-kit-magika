@@ -46,7 +46,7 @@ export const FooterContent = styled.div`
       margin-inline: 72px;
     }
 
-    > div {
+    &::before {
       position: absolute;
       content: '';
       width: 200vw;
