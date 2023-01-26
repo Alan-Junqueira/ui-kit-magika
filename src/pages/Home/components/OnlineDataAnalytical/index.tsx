@@ -28,10 +28,10 @@ export const OnlineDataAnalytical = ({ ...props }: IOnlineDataAnalytical) => {
             from digital attacks. These cyberattacks.
           </p>
           <div className="polygons">
-            <List label="World Class" variant="sm" />
-            <List label="Flexibel" variant="sm" />
-            <List label="Easy Learn" variant="sm" />
-            <List label="Affordable" variant="sm" />
+            <List label="World Class" variant="sm" color="dark" />
+            <List label="Flexibel" variant="sm" color="dark" />
+            <List label="Easy Learn" variant="sm" color="dark" />
+            <List label="Affordable" variant="sm" color="dark" />
           </div>
         </div>
       </OnlineDataAnalyticalContent>
