@@ -16,6 +16,7 @@ export const ButtonContainer = styled.button<IButtonContainer>`
 
   max-width: fit-content;
 
+  
   img {
     display: none;
   }

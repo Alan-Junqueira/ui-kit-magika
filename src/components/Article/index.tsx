@@ -15,7 +15,6 @@ export const Article = ({ title, description, image, ...props }: IArticle) => {
       <section id="article-info">
         <h2>{title}</h2>
         <p>{description}</p>
-        <Button label="Read More" variant="big" />
       </section>
     </ArticleContainer>
   );
