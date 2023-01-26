@@ -20,7 +20,14 @@ export const StepsContent = styled.div`
     flex-direction: column;
   }
 
-  @media (min-width: 426px) and (max-width: 1199px) {
+  @media (min-width: 426px) and (max-width: 867px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 72px;
+    gap: 32px;
+  }
+
+  @media (min-width: 868px) and (max-width: 1199px) {
     flex-direction: row;
     align-items: center;
     padding: 56px 72px;
@@ -47,6 +54,11 @@ export const StepsCards = styled.div`
 
   @media (min-width: 426px) and (max-width: 1199px) {
     padding: 53px 32px 0 30px;
+  }
+
+  @media (min-width: 426px) and (max-width: 867px) {
+    max-width: 566px;
+    width: 100%;
   }
 
   @media (min-width: 1200px) {
@@ -88,7 +100,7 @@ export const StepCard = styled.div<StepCardProps>`
         align-self: flex-end;
       }
 
-      @media (min-width: 426px) and (max-width: 1199px) {
+      @media (max-width: 426px) {
         max-width: 274px;
         font-size: ${(props) => props.theme.sizes['11px']};
         line-height: 17px;
@@ -99,7 +111,17 @@ export const StepCard = styled.div<StepCardProps>`
         align-self: flex-end;
       }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 426px) and (max-width: 867px) {
+        max-width: 500px;
+        font-size: ${(props) => props.theme.sizes['20px']};
+        line-height: 32px;
+
+        margin-bottom: 80px;
+
+        align-self: flex-end;
+      }
+
+      @media (min-width: 868px) {
         max-width: 500px;
         font-size: ${(props) => props.theme.sizes['20px']};
         line-height: 32px;
@@ -178,7 +200,7 @@ export const StepCard = styled.div<StepCardProps>`
         margin-bottom: 35px;
       }
 
-      @media (min-width: 426px) and (max-width: 1199px) {
+      @media (max-width: 426px) {
         max-width: 144px;
         font-size: ${(props) => props.theme.sizes['11px']};
         line-height: 16px;
@@ -189,7 +211,18 @@ export const StepCard = styled.div<StepCardProps>`
         align-self: center;
       }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 426px) and (max-width: 867px) {
+        max-width: 265px;
+        font-size: ${(props) => props.theme.sizes['20px']};
+        line-height: 29px;
+        text-align: center;
+
+        margin-bottom: 61px;
+
+        align-self: center;
+      }
+
+      @media (min-width: 868px) {
         max-width: 265px;
         font-size: ${(props) => props.theme.sizes['20px']};
         line-height: 29px;
@@ -212,12 +245,21 @@ export const StepCard = styled.div<StepCardProps>`
 
         transform: rotateY(150deg) rotateZ(90deg);
 
-        @media (min-width: 1200px) {
+        @media (min-width: 426px) and (max-width: 867px) {
           top: -100px;
           width: 100px;
           svg {
             height: 100px !important;
-            width: 55px;
+            width: 100px;
+          }
+        }
+
+        @media (min-width: 868px) {
+          top: -100px;
+          width: 100px;
+          svg {
+            height: 100px !important;
+            width: 100px;
           }
         }
 
@@ -233,7 +275,15 @@ export const StepCard = styled.div<StepCardProps>`
           border: 1.79532px solid #ffffffb2;
           border-radius: 50%;
 
-          @media (min-width: 1200px) {
+          @media (min-width: 426px) and (max-width: 867px) {
+            top: 54%;
+            left: 6%;
+            width: 22px;
+            height: 22px;
+            border: 3.1042px solid #ffffffb2;
+          }
+
+          @media (min-width: 868px) {
             top: 54%;
             left: 6%;
             width: 22px;
@@ -241,13 +291,13 @@ export const StepCard = styled.div<StepCardProps>`
             border: 3.1042px solid #ffffffb2;
           }
         }
+      }
 
-        svg {
-          width: 100%;
-          height: 57px;
+      svg {
+        width: 100%;
+        height: 57px;
 
-          color: ${(props) => props.theme.colors['white-1']};
-        }
+        color: ${(props) => props.theme.colors['white-1']};
       }
     `};
 
@@ -266,13 +316,22 @@ export const StepCard = styled.div<StepCardProps>`
         max-width: 290px;
       }
 
-      @media (min-width: 426px) and (max-width: 1199px) {
+      @media (min-width: 426px) and (max-width: 866px) {
         max-width: 262px;
         font-size: ${(props) => props.theme.sizes['11px']};
         line-height: 17px;
         text-align: justify;
 
         margin-bottom: 33px;
+
+        align-self: flex-start;
+      }
+
+      @media (min-width: 426px) and (max-width: 867px) {
+        max-width: 483px;
+        font-size: ${(props) => props.theme.sizes['20px']};
+        line-height: 32px;
+        text-align: center;
 
         align-self: flex-start;
       }
@@ -348,7 +407,14 @@ export const StepCard = styled.div<StepCardProps>`
 
     z-index: 1;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 426px) and (max-width: 867px) {
+      bottom: -70px;
+      img {
+        height: 57px;
+      }
+    }
+
+    @media (min-width: 868px) {
       bottom: -70px;
       img {
         height: 57px;
@@ -367,7 +433,13 @@ export const StepCard = styled.div<StepCardProps>`
       border: 3.1042px solid #ffffffb2;
       border-radius: 50%;
 
-      @media (min-width: 1200px) {
+      @media (min-width: 426px) and (max-width: 867px) {
+        width: 16px;
+        height: 16px;
+        left: 26%;
+      }
+
+      @media (min-width: 868px) {
         width: 16px;
         height: 16px;
         left: 26%;
@@ -440,6 +512,7 @@ export const StepsDescription = styled.div`
       }
 
       @media (min-width: 1200px) {
+        display: block;
         max-width: 211px;
         width: 100%;
       }
