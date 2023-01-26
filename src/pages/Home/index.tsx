@@ -1,4 +1,5 @@
 import React from 'react';
+import { Awards } from './components/Awards';
 import { FeatureIcons } from './components/FeatureIcons';
 import { HomeHero } from './components/Hero';
 import { OnlineDataAnalytical } from './components/OnlineDataAnalytical';
@@ -17,6 +18,7 @@ export const Home = () => {
       <SupportedPremiumSoftware id="home-supported-premium-software" />
       <Steps id="home-steps" />
       <ReadBlogs id="home-read-blogs" />
+      <Awards id="awards"/>
     </>
   );
 };
