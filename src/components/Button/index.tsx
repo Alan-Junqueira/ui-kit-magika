@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import { ButtonContainer } from './styled';
 
@@ -9,6 +9,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   variant: 'big' | 'small';
   full?: boolean;
   label: string;
+  children?: ReactNode
 }
 
 export const Button = ({
@@ -16,6 +17,7 @@ export const Button = ({
   variant,
   full,
   label,
+  children,
   ...props
 }: ButtonProps) => {
   return (
@@ -27,6 +29,7 @@ export const Button = ({
       {...props}
     >
       {label} <img src={buttonIcon} alt="" />
+      {children}
     </ButtonContainer>
   );
 };

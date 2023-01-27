@@ -7,6 +7,7 @@ interface IButtonContainer {
 }
 
 export const ButtonContainer = styled.button<IButtonContainer>`
+  position: relative;
   line-height: 24px;
   color: ${(props) => props.theme.colors['white-1']};
 
@@ -16,7 +17,6 @@ export const ButtonContainer = styled.button<IButtonContainer>`
 
   max-width: fit-content;
 
-  
   img {
     display: none;
   }
