@@ -12,7 +12,6 @@ export const AwardsContent = styled.div`
 
   display: flex;
   flex-direction: column;
-  gap: 32px;
 
   @media (min-width: 1200px) {
     padding: 104px 152px;
@@ -28,11 +27,44 @@ export const AwardsContent = styled.div`
     text-align: center;
 
     font-weight: 700;
-    font-size: ${props => props.theme.sizes['36px']};
+    font-size: ${(props) => props.theme.sizes['36px']};
     line-height: 46px;
 
     margin-bottom: 32px;
 
     color: ${(props) => props.theme.colors.black};
+  }
+
+  > div.mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+
+    @media (min-width: 426px) {
+      display: none;
+    }
+  }
+
+  > div.desktop {
+    display: none;
+
+    @media (min-width: 426px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px 72px;
+      justify-content: space-between;
+      margin-bottom: 74px;
+    }
+
+    @media (max-width: 968px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  > button {
+    @media (min-width: 426px) {
+      align-self: center;
+    }
   }
 `;
