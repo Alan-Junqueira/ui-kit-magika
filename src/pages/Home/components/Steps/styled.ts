@@ -92,7 +92,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (max-width: 425px) {
         max-width: 292px;
-        font-size: ${(props) => props.theme.sizes['12px']};
+        font-size: ${(props) => props.theme.sizes.xs};
         line-height: 19px;
 
         margin-bottom: 47px;
@@ -102,7 +102,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (max-width: 426px) {
         max-width: 274px;
-        font-size: ${(props) => props.theme.sizes['11px']};
+        font-size: 1.1rem;
         line-height: 17px;
         text-align: justify;
 
@@ -113,7 +113,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (min-width: 426px) and (max-width: 867px) {
         max-width: 500px;
-        font-size: ${(props) => props.theme.sizes['20px']};
+        font-size: ${(props) => props.theme.sizes.xl};
         line-height: 32px;
 
         margin-bottom: 80px;
@@ -123,7 +123,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (min-width: 868px) {
         max-width: 500px;
-        font-size: ${(props) => props.theme.sizes['20px']};
+        font-size: ${(props) => props.theme.sizes.xl};
         line-height: 32px;
 
         margin-bottom: 80px;
@@ -190,7 +190,7 @@ export const StepCard = styled.div<StepCardProps>`
       background-color: ${(props) => props.theme.colors['orange-100']};
 
       @media (max-width: 425px) {
-        font-size: ${(props) => props.theme.sizes['12px']};
+        font-size: ${(props) => props.theme.sizes.xs};
         line-height: 17px;
         max-width: 154px;
         text-align: center;
@@ -202,7 +202,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (max-width: 426px) {
         max-width: 144px;
-        font-size: ${(props) => props.theme.sizes['11px']};
+        font-size: 1.1rem;
         line-height: 16px;
         text-align: justify;
 
@@ -213,7 +213,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (min-width: 426px) and (max-width: 867px) {
         max-width: 265px;
-        font-size: ${(props) => props.theme.sizes['20px']};
+        font-size: ${(props) => props.theme.sizes.xl};
         line-height: 29px;
         text-align: center;
 
@@ -224,7 +224,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (min-width: 868px) {
         max-width: 265px;
-        font-size: ${(props) => props.theme.sizes['20px']};
+        font-size: ${(props) => props.theme.sizes.xl};
         line-height: 29px;
         text-align: center;
 
@@ -311,14 +311,14 @@ export const StepCard = styled.div<StepCardProps>`
       background-color: ${(props) => props.theme.colors['brand-2']};
 
       @media (max-width: 425px) {
-        font-size: ${(props) => props.theme.sizes['12px']};
+        font-size: ${(props) => props.theme.sizes.xs};
         line-height: 19px;
         max-width: 290px;
       }
 
       @media (min-width: 426px) and (max-width: 866px) {
         max-width: 262px;
-        font-size: ${(props) => props.theme.sizes['11px']};
+        font-size: 1.1rem;
         line-height: 17px;
         text-align: justify;
 
@@ -329,7 +329,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (min-width: 426px) and (max-width: 867px) {
         max-width: 483px;
-        font-size: ${(props) => props.theme.sizes['20px']};
+        font-size: ${(props) => props.theme.sizes.xl};
         line-height: 32px;
         text-align: center;
 
@@ -338,7 +338,7 @@ export const StepCard = styled.div<StepCardProps>`
 
       @media (min-width: 1200px) {
         max-width: 483px;
-        font-size: ${(props) => props.theme.sizes['20px']};
+        font-size: ${(props) => props.theme.sizes.xl};
         line-height: 32px;
         text-align: center;
 
@@ -456,18 +456,18 @@ export const StepsDescription = styled.div`
     color: ${(props) => props.theme.colors['white-1']};
 
     @media (max-width: 425px) {
-      font-size: ${(props) => props.theme.sizes['32px']};
+      font-size: 3.2rem;
       margin-bottom: 16px;
     }
 
     @media (min-width: 426px) and (max-width: 1199px) {
-      font-size: ${(props) => props.theme.sizes['36px']};
+      font-size: ${(props) => props.theme.sizes['4xl']};
       margin-bottom: 32px;
     }
 
     @media (min-width: 1200px) {
       font-weight: 500;
-      font-size: ${(props) => props.theme.sizes['48px']};
+      font-size: ${(props) => props.theme.sizes['5xl']};
       line-height: 60px;
       margin-bottom: 24px;
     }
@@ -475,7 +475,7 @@ export const StepsDescription = styled.div`
 
   > p {
     font-weight: 400;
-    font-size: ${(props) => props.theme.sizes['16px']};
+    font-size: ${(props) => props.theme.sizes.base};
     line-height: 26px;
 
     color: ${(props) => props.theme.colors['white-1']};
@@ -486,7 +486,7 @@ export const StepsDescription = styled.div`
 
     @media (min-width: 1200px) {
       font-weight: 400;
-      font-size: ${(props) => props.theme.sizes['21px']};
+      font-size: 2.1rem;
       line-height: 34px;
       margin-bottom: 64px;
     }

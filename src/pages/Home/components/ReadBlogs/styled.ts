@@ -51,12 +51,12 @@ export const ReadBlogsContent = styled.div`
 
       @media (min-width: 1200px) {
         font-weight: 500;
-        font-size: ${(props) => props.theme.sizes['48px']};
+        font-size: ${(props) => props.theme.sizes['5xl']};
         line-height: 60px;
       }
       @media (max-width: 1199px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['36px']};
+        font-size: 3.6rem;
         line-height: 46px;
       }
       @media (max-width: 425px) {
@@ -65,7 +65,7 @@ export const ReadBlogsContent = styled.div`
 
     p {
       font-weight: 400;
-      font-size: ${(props) => props.theme.sizes['16px']};
+      font-size: ${(props) => props.theme.sizes.base};
       line-height: 26px;
 
       text-align: center;

@@ -45,7 +45,7 @@ export const FeaturedCardContainer = styled.div<FeaturedCardContainerProps>`
   }
 
   p {
-    font-size: ${(props) => props.theme.sizes['18px']};
+    font-size: ${(props) => props.theme.sizes.lg};
     line-height: 28px;
 
     color: ${(props) => props.theme.colors.black};

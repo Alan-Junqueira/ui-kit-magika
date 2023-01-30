@@ -54,7 +54,7 @@ export const OnlineDataAnalyticalContent = styled.div`
 
     h2 {
       font-weight: 700;
-      font-size: ${(props) => props.theme.sizes['36px']};
+      font-size: 3.6rem;
       line-height: 46px;
 
       @media (max-width: 425px) {
@@ -72,12 +72,12 @@ export const OnlineDataAnalyticalContent = styled.div`
       }
 
       @media (min-width: 1200px) and (max-width: 1450px) {
-        font-size: ${(props) => props.theme.sizes['48px']};
+        font-size: ${(props) => props.theme.sizes['5xl']};
         line-height: 60px;
       }
 
       @media (min-width: 1451px) {
-        font-size: ${(props) => props.theme.sizes['64px']};
+        font-size: 6.4rem;
         line-height: 72px;
       }
 
@@ -94,7 +94,7 @@ export const OnlineDataAnalyticalContent = styled.div`
       margin-bottom: 32px;
 
       @media (min-width: 1200px) {
-        font-size: ${(props) => props.theme.sizes['21px']};
+        font-size: 2.1rem;
         line-height: 34px;
 
         margin-bottom: 64px;

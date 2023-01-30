@@ -38,7 +38,7 @@ export const ArticleContainer = styled.article<ArticleContainerProps>`
       font-weight: 700;
 
       color: ${(props) => props.theme.colors.black};
-      font-size: ${(props) => props.theme.sizes['32px']};
+      font-size: 3.2rem;
       line-height: 42px;
       margin-bottom: 8px;
     }
@@ -51,7 +51,7 @@ export const ArticleContainer = styled.article<ArticleContainerProps>`
       -webkit-box-orient: vertical;
 
       font-weight: 400;
-      font-size: ${(props) => props.theme.sizes['16px']};
+      font-size: ${(props) => props.theme.sizes.base};
       line-height: 26px;
 
       text-align: justify;

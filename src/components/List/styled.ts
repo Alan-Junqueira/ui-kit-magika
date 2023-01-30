@@ -17,50 +17,50 @@ export const ListContainer = styled.div<ListContainerProps>`
 
   span {
     ${(props) =>
-      props.color === 'dark' &&
-      css`
+    props.color === 'dark' &&
+    css`
         color: ${(props) => props.theme.colors.dark};
       `};
 
     ${(props) =>
-      props.color === 'light' &&
-      css`
+    props.color === 'light' &&
+    css`
         color: ${(props) => props.theme.colors['white-1']};
       `};
 
     ${(props) =>
-      props.variant === 'sm' &&
-      css`
-        font-size: ${(props) => props.theme.sizes['14px']};
+    props.variant === 'sm' &&
+    css`
+        font-size: ${(props) => props.theme.sizes.sm};
         line-height: 24px;
       `};
 
     ${(props) =>
-      props.variant === 'sm-2' &&
-      css`
-        font-size: ${(props) => props.theme.sizes['16px']};
+    props.variant === 'sm-2' &&
+    css`
+        font-size: ${(props) => props.theme.sizes.base};
         line-height: 26px;
       `};
     ${(props) =>
-      props.variant === 'md' &&
-      css`
-        font-size: ${(props) => props.theme.sizes['18px']};
+    props.variant === 'md' &&
+    css`
+        font-size: ${(props) => props.theme.sizes.lg};
         line-height: 28px;
       `};
     ${(props) =>
-      props.variant === 'lg' &&
-      css`
-        font-size: ${(props) => props.theme.sizes['21px']};
+    props.variant === 'lg' &&
+    css`
+        font-size: 2.1rem;
         line-height: 34px;
       `};
 
     @media (max-width: 1024px) {
-      font-size: ${(props) => props.theme.sizes['18px']};
+      font-size: ${(props) => props.theme.sizes.lg};
       line-height: 28px;
     }
 
     @media (max-width: 425px) {
-      font-size: ${(props) => props.theme.sizes['14px']};
+      font-size: ${(props) => props.theme.sizes.sm};
       line-height: 24px;
     }
   }

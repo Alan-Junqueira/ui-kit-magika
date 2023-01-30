@@ -12,6 +12,8 @@ export const NavBar = () => {
   let timeoutId: number | undefined = undefined;
   const menuRef = useRef<HTMLUListElement>(null);
 
+  console.log(menuRef);
+
   const handleButtonHover: React.MouseEventHandler = () => {
     setButtonHover(true);
     setShow(true);

@@ -62,7 +62,7 @@ export const HomeHeroContent = styled.div`
     }
     h1 {
       font-weight: 700;
-      font-size: ${(props) => props.theme.sizes['100px']};
+      font-size: 10rem;
       line-height: 100px;
 
       margin-bottom: 56px;
@@ -71,79 +71,79 @@ export const HomeHeroContent = styled.div`
 
       @media (max-width: 1510px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['92px']};
+        font-size: 9.2rem;
         line-height: 88px;
       }
 
       @media (max-width: 1460px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['88px']};
+        font-size: 8.8rem;
         line-height: 84px;
       }
 
       @media (max-width: 1428px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['84px']};
+        font-size: 8.4rem;
         line-height: 80px;
       }
 
       @media (max-width: 1400px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['80px']};
+        font-size: 8rem;
         line-height: 76px;
       }
 
       @media (max-width: 1372px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['76px']};
+        font-size: 7.6rem;
         line-height: 72px;
       }
 
       @media (max-width: 1344px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['70px']};
+        font-size: 7rem;
         line-height: 72px;
       }
 
       @media (max-width: 1116px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['64px']};
+        font-size: 6.4rem;
         line-height: 72px;
       }
 
       @media (max-width: 1164px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['58px']};
+        font-size: 5.8rem;
         line-height: 72px;
       }
 
       @media (max-width: 1012px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['52px']};
+        font-size: 5.2rem;
         line-height: 72px;
       }
 
       @media (max-width: 960px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['48px']};
+        font-size: ${(props) => props.theme.sizes['5xl']};
         line-height: 72px;
       }
 
       @media (max-width: 928px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['42px']};
+        font-size:4.2rem;
         line-height: 72px;
       }
 
       @media (max-width: 876px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['40px']};
+        font-size: 4rem;
         line-height: 55px;
       }
 
       @media (max-width: 860px) {
         font-weight: 700;
-        font-size: ${(props) => props.theme.sizes['36px']};
+        font-size: 3.6rem;
         line-height: 46px;
       }
 
@@ -163,21 +163,21 @@ export const HomeHeroContent = styled.div`
       opacity: 0.8;
 
       @media (max-width: 1344px) {
-        font-size: ${(props) => props.theme.sizes['18px']};
+        font-size: ${(props) => props.theme.sizes.lg};
       }
 
       @media (max-width: 1216px) {
-        font-size: ${(props) => props.theme.sizes['16px']};
+        font-size: ${(props) => props.theme.sizes.base};
       }
 
       @media (max-width: 968px) {
-        font-size: ${(props) => props.theme.sizes['14px']};
+        font-size: ${(props) => props.theme.sizes.sm};
         line-height: 20px;
       }
 
       @media (max-width: 824px) {
         text-align: center;
-        font-size: ${(props) => props.theme.sizes['16px']};
+        font-size: ${(props) => props.theme.sizes.base};
         line-height: 26px;
         margin-bottom: 32px;
       }
@@ -299,7 +299,7 @@ export const HomeHeroTestimonial = styled.div`
     h4 {
       font-family: 'Inter';
       font-weight: 700;
-      font-size: ${(props) => props.theme.sizes['10px']};
+      font-size: 1rem;
       line-height: 14px;
 
       color: ${(props) => props.theme.colors.black};
@@ -313,7 +313,7 @@ export const HomeHeroTestimonial = styled.div`
     p {
       font-family: 'Inter';
       font-weight: 400;
-      font-size: ${(props) => props.theme.sizes['9px']};
+      font-size: .9rem;
       line-height: 14px;
 
       color: ${(props) => props.theme.colors.black};

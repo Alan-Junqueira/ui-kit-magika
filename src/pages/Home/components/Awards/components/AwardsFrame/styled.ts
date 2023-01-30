@@ -22,7 +22,7 @@ export const AwardsFrameContainer = styled.div`
 
     @media (max-width: 425px) {
       font-weight: 400;
-      font-size: ${(props) => props.theme.sizes['16px']};
+      font-size: ${(props) => props.theme.sizes.base};
       line-height: 26px;
 
       color: ${(props) => props.theme.colors.black};

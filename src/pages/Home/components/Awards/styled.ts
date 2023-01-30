@@ -27,7 +27,7 @@ export const AwardsContent = styled.div`
     text-align: center;
 
     font-weight: 700;
-    font-size: ${(props) => props.theme.sizes['36px']};
+    font-size: 3.6rem;
     line-height: 46px;
 
     margin-bottom: 32px;

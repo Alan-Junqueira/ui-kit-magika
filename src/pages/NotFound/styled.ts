@@ -36,19 +36,19 @@ export const NotFoundContent = styled.div`
     justify-content: space-between;
 
     font-weight: 700;
-    font-size: ${(props) => props.theme.sizes['370px']};
+    font-size: 37rem;
     line-height: 403px;
 
     margin-bottom: 13px;
 
     @media (max-width: 1024px) {
-      font-size: ${(props) => props.theme.sizes['268px']};
+      font-size: 26.8rem;
       line-height: 292px;
       margin-bottom: 32px;
     }
 
     @media (max-width: 900px) {
-      font-size: ${(props) => props.theme.sizes['110px']};
+      font-size: 11rem;
       line-height: 119px;
       justify-content: space-around;
     }
@@ -113,7 +113,7 @@ export const NotFoundContent = styled.div`
   }
 
   p {
-    font-size: ${(props) => props.theme.sizes['21px']};
+    font-size: 2.1rem;
     line-height: 34px;
 
     text-align: center;
@@ -124,7 +124,7 @@ export const NotFoundContent = styled.div`
     opacity: 0.7;
 
     @media (max-width: 1024px) {
-      font-size: ${(props) => props.theme.sizes['14px']};
+      font-size: ${(props) => props.theme.sizes.sm};
       line-height: 24px;
       opacity: 0.8;
 
@@ -133,7 +133,7 @@ export const NotFoundContent = styled.div`
 
     @media (max-width: 900px) {
       font-weight: 400;
-      font-size: ${(props) => props.theme.sizes['16px']};
+      font-size: ${(props) => props.theme.sizes.base};
       line-height: 26px;
     }
   }

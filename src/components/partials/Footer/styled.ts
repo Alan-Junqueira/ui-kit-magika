@@ -36,7 +36,7 @@ export const FooterContent = styled.div`
     padding-top: 40px;
 
     font-weight: 400;
-    font-size: ${(props) => props.theme.sizes['18px']};
+    font-size: ${(props) => props.theme.sizes.lg};
     line-height: 28px;
 
     color: ${(props) => props.theme.colors['white-1']};
@@ -133,12 +133,12 @@ export const FooterHeader = styled.header`
     color: ${(props) => props.theme.colors['white-1']};
 
     @media (max-width: 1199px) {
-      font-size: ${(props) => props.theme.sizes['18px']};
+      font-size: ${(props) => props.theme.sizes.lg};
       line-height: 28px;
     }
 
     @media (max-width: 425px) {
-      font-size: ${(props) => props.theme.sizes['16px']};
+      font-size: ${(props) => props.theme.sizes.base};
       line-height: 26px;
     }
   }
@@ -229,7 +229,7 @@ export const FooterNavigation = styled.nav`
 
     span {
       font-weight: 500;
-      font-size: ${(props) => props.theme.sizes['21px']};
+      font-size: 2.1rem;
       line-height: 34px;
 
       color: ${(props) => props.theme.colors['white-1']};
@@ -237,7 +237,7 @@ export const FooterNavigation = styled.nav`
 
     li {
       font-weight: 400;
-      font-size: ${(props) => props.theme.sizes['18px']};
+      font-size: ${(props) => props.theme.sizes.lg};
       line-height: 28px;
 
       color: ${(props) => props.theme.colors['white-1']};

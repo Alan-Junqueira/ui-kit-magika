@@ -37,7 +37,7 @@ export const NavBarContent = styled.nav`
     justify-content: space-around;
 
     font-weight: 400;
-    font-size: ${(props) => props.theme.sizes['16px']};
+    font-size: ${(props) => props.theme.sizes.base};
     line-height: 26px;
 
     margin-inline: 44px;
@@ -113,7 +113,7 @@ export const NavBarContent = styled.nav`
           width: 250px;
           height: 50px;
 
-          background: rgba(0, 0, 0, 0.5);
+          background: rgba(0, 0, 0, 0.8);
 
           &:hover {
             background: ${(props) => props.theme.colors.primary};

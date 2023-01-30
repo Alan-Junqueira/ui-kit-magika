@@ -12,7 +12,7 @@ export const BannerContainer = styled.div<IBannerProps>`
   overflow: hidden;
 
   font-family: 'Space Grotesk';
-  font-size: ${(props) => props.theme.sizes['52px']};
+  font-size: 5.2rem;  
   font-weight: 700;
   line-height: 60px;
 
@@ -27,13 +27,13 @@ export const BannerContainer = styled.div<IBannerProps>`
 
 
   @media (max-width: 1290px) {
-    font-size: ${(props) => props.theme.sizes['40px']};
+    font-size: 4rem;
     height: 103px;
     padding-block: 27px;
   }
 
   @media (max-width: 957px) {
-    font-size: ${(props) => props.theme.sizes['30px']};
+    font-size: ${(props) => props.theme.sizes['3xl']};
     height: 76px;
     padding-block: 20px;
   }

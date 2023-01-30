@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+    font-size: 65%;
+  }
+
   *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -16,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 500;
     font-family: 'Space Grotesk', sans-serif;
     color: ${(props) => props.theme.colors.black};
-    font-size: ${(props) => props.theme.sizes['16px']};
+    font-size: ${(props) => props.theme.sizes.base};
     -webkit-font-smoothing: antialiased;
 
     background-color: ${(props) => props.theme.colors['white-1']};
