@@ -40,7 +40,7 @@ export const defaultTheme = {
     '3xl': '3rem',
     '4xl': '3.6rem',
     '5xl': '4.8rem',
-    '6xl': '6remrem',
+    '6xl': '6rem',
     '7xl': '7.2rem',
     '8xl': '9.6rem',
     '9xl': '12.8rem',
