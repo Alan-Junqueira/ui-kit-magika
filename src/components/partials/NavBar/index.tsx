@@ -67,7 +67,7 @@ export const NavBar = () => {
             <Link to="/about">About Us</Link>
           </li>
           <li>
-            <Link to="/">Article</Link>
+            <Link to="/article">Article</Link>
           </li>
           <li>
             <Link to="/">Contact Us</Link>
@@ -99,7 +99,7 @@ export const NavBar = () => {
                 <Link to="/about">About Us</Link>
               </li>
               <li>
-                <Link to="/">Article</Link>
+                <Link to="/article">Article</Link>
               </li>
               <li>
                 <Link to="/">Contact Us</Link>
