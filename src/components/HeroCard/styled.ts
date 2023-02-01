@@ -29,8 +29,8 @@ export const HeroCardContainer = styled.div<HeroCardContainerProps>`
       left: 0;
 
       ${(props) =>
-        props.variant === 'orange' &&
-        css`
+    props.variant === 'orange' &&
+    css`
           background: linear-gradient(
             180.3deg,
             rgba(255, 155, 0, 0) 0.26%,
@@ -39,8 +39,8 @@ export const HeroCardContainer = styled.div<HeroCardContainerProps>`
         `};
 
       ${(props) =>
-        props.variant === 'blue' &&
-        css`
+    props.variant === 'blue' &&
+    css`
           background: linear-gradient(
             180.3deg,
             rgba(0, 0, 255, 0) 0.26%,
@@ -49,8 +49,8 @@ export const HeroCardContainer = styled.div<HeroCardContainerProps>`
         `};
 
       ${(props) =>
-        props.variant === 'red' &&
-        css`
+    props.variant === 'red' &&
+    css`
           background: linear-gradient(
             180.3deg,
             rgba(237, 28, 36, 0) 0.26%,

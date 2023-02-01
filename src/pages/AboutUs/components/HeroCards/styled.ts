@@ -35,4 +35,6 @@ export const HeroCardsContent = styled.div`
   }
 `;
 
-export const HeroCardsSlider = styled.div``;
+export const HeroCardsSlider = styled.div`
+  cursor: grab;
+`;
