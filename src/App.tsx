@@ -12,7 +12,7 @@ import { Footer } from './components/partials/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.PUBLIC_URL}>
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyle />
         <NavBar />
