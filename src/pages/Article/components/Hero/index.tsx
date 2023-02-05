@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArticleHeaderContent, ArticleHeroContainer, ArticleHeroContent } from './styled';
+import { ArticleHeaderContent, ArticleHeroContainer, ArticleHeroContent, ArticleMainContent } from './styled';
 
 import semicolonImage from '/assets/images/article-semicolon.svg';
 import article1 from '/assets/images/article-1.png';
@@ -23,9 +23,9 @@ export const ArticleHero = ({ ...props }: IHero) => {
             <img src={semicolonImage} alt="" />
           </div>
         </ArticleHeaderContent>
-        <main>
+        <ArticleMainContent bgImage={article1}>
           <div className="image">
-            <img src={article1} alt="" />
+            {/* <img src={article1} alt="" /> */}
           </div>
           <div className="main-content">
             <h2>Tips belajar menjadi menyenangkan</h2>
@@ -36,7 +36,7 @@ export const ArticleHero = ({ ...props }: IHero) => {
             </p>
             <Button label="Read more" variant="big" />
           </div>
-        </main>
+        </ArticleMainContent>
         <h1>Teste</h1>
         <p>teste</p>
       </ArticleHeroContent>
