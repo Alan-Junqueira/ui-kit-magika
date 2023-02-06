@@ -40,6 +40,8 @@ export const ArticleContainer = styled.article<ArticleContainerProps>`
       color: ${(props) => props.theme.colors.black};
       font-size: 3.2rem;
       line-height: 42px;
+      text-align: justify;
+
       margin-bottom: 8px;
     }
 
