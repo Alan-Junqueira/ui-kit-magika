@@ -17,6 +17,8 @@ const TEMPORARY_DESCRIPTION =
 export const TEMPORARY_ARTICLES: ArticleProps[] = [
   {
     id: 1,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article1,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,
@@ -24,6 +26,8 @@ export const TEMPORARY_ARTICLES: ArticleProps[] = [
   },
   {
     id: 2,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article2,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,
@@ -31,6 +35,8 @@ export const TEMPORARY_ARTICLES: ArticleProps[] = [
   },
   {
     id: 3,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article3,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,
@@ -38,6 +44,8 @@ export const TEMPORARY_ARTICLES: ArticleProps[] = [
   },
   {
     id: 4,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article4,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,
@@ -45,6 +53,8 @@ export const TEMPORARY_ARTICLES: ArticleProps[] = [
   },
   {
     id: 5,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article5,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,
@@ -52,6 +62,8 @@ export const TEMPORARY_ARTICLES: ArticleProps[] = [
   },
   {
     id: 6,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article6,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,
@@ -59,6 +71,8 @@ export const TEMPORARY_ARTICLES: ArticleProps[] = [
   },
   {
     id: 7,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article7,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,
@@ -66,6 +80,8 @@ export const TEMPORARY_ARTICLES: ArticleProps[] = [
   },
   {
     id: 8,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article8,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,
@@ -73,6 +89,8 @@ export const TEMPORARY_ARTICLES: ArticleProps[] = [
   },
   {
     id: 9,
+    createdAt: new Date(),
+    owner: 'Alan Junqueira',
     image: article9,
     title: TEMPORARY_TITLE,
     description: TEMPORARY_DESCRIPTION,

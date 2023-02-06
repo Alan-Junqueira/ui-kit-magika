@@ -1,22 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { ArticleProps } from '../../../@types/article';
 import { TEMPORARY_ARTICLES } from '../../../services/database/articles';
-import { ArticleHeroContainer } from './styled';
-
+import { firstLetterUppercase } from '../../../utils/firstLetterUppercase';
+import { getMonth } from '../../../utils/getMonth';
+import {
+  ArticleHeroContainer,
+  ArticleHeroContent,
+  ArticleHeroDescription,
+  ArticleHeroInByDate,
+  ArticleHeroMainContent,
+  ArticleHeroQuotation,
+  ArticleHeroTitle
+} from './styled';
 interface IArticlesHero extends React.HTMLAttributes<HTMLDivElement> {
   articleId: number;
 }
 
 export const ArticleHero = ({ articleId, ...props }: IArticlesHero) => {
-  const [articleToShow, setArticleToShow] = useState<ArticleProps>({
-    id: 1,
-    image: '',
-    title: '',
-    description: '',
-    contentType: 'design'
-  });
+  const [articleToShow, setArticleToShow] = useState<ArticleProps>(
+    TEMPORARY_ARTICLES[0]
+  );
 
-  console.log(articleId)
+  console.log(articleId);
 
   useEffect(() => {
     TEMPORARY_ARTICLES.forEach((article) => {
@@ -27,7 +32,33 @@ export const ArticleHero = ({ articleId, ...props }: IArticlesHero) => {
   }, [articleId]);
   return (
     <ArticleHeroContainer {...props}>
-      <img src={articleToShow.image} alt="" />
+      <ArticleHeroContent bgImage={articleToShow.image}>
+        <ArticleHeroMainContent>
+          <div className="content">
+            <ArticleHeroTitle>{articleToShow.title}</ArticleHeroTitle>
+            <ArticleHeroInByDate>
+              <span className="in">
+                <small>In</small>{' '}
+                {firstLetterUppercase(articleToShow.contentType)}
+              </span>
+              <span className="by">
+                <small>By</small> {articleToShow.owner}
+              </span>
+              <span className="date">
+                <small>Date</small>
+                {articleToShow.createdAt.getDate()}{' '}
+                {getMonth(articleToShow.createdAt.getMonth())},{' '}
+                {articleToShow.createdAt.getFullYear()}
+              </span>
+            </ArticleHeroInByDate>
+            <ArticleHeroDescription>
+              {articleToShow.description}
+            </ArticleHeroDescription>
+          </div>
+          <ArticleHeroQuotation>"</ArticleHeroQuotation>
+        </ArticleHeroMainContent>
+        <div className="image"></div>
+      </ArticleHeroContent>
     </ArticleHeroContainer>
   );
 };

@@ -1,0 +1,7 @@
+const months: string[] = [
+  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+]
+
+export const getMonth = (month: number) => {
+  return months[month]
+}

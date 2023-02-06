@@ -8,7 +8,7 @@ export const Article = () => {
 
   return (
     <>
-      <ArticleHero articleId={params.id ? +params.id : 1} />
+      <ArticleHero articleId={params.id ? +params.id : 1} id="article--hero"/>
     </>
   );
 };
