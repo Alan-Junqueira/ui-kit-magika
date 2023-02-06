@@ -1,9 +1,16 @@
 import React from 'react';
-import { ArticleHeaderContent, ArticleHeroContainer, ArticleHeroContent, ArticleMainContent } from './styled';
+import {
+  ArticleHeaderContent,
+  ArticleHeroContainer,
+  ArticleHeroContent,
+  ArticleMainContent
+} from './styled';
 
 import semicolonImage from '/assets/images/article-semicolon.svg';
 import article1 from '/assets/images/article-1.png';
 import { Button } from '../../../../components/Button';
+
+
 
 interface IHero extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -24,9 +31,7 @@ export const ArticleHero = ({ ...props }: IHero) => {
           </div>
         </ArticleHeaderContent>
         <ArticleMainContent bgImage={article1}>
-          <div className="image">
-            {/* <img src={article1} alt="" /> */}
-          </div>
+          <div className="image">{/* <img src={article1} alt="" /> */}</div>
           <div className="main-content">
             <h2>Tips belajar menjadi menyenangkan</h2>
             <p>
@@ -37,8 +42,6 @@ export const ArticleHero = ({ ...props }: IHero) => {
             <Button label="Read more" variant="big" />
           </div>
         </ArticleMainContent>
-        <h1>Teste</h1>
-        <p>teste</p>
       </ArticleHeroContent>
     </ArticleHeroContainer>
   );
