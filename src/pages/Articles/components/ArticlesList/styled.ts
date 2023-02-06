@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const ArticlesListContainer = styled.section`
+export const ArticleListContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -40,7 +41,7 @@ export const ArticlesListContainer = styled.section`
   }
 `;
 
-export const ArticlesListFilterContainer = styled.div`
+export const ArticleListFilterContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -54,7 +55,7 @@ export const ArticlesListFilterContainer = styled.div`
   opacity: 0.7;
 `;
 
-export const ArticlesListFilterContent = styled.div`
+export const ArticleListFilterContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +131,7 @@ export const ArticleFilterListButton = styled.button`
   }
 `;
 
-export const ArticlesListContent = styled.div`
+export const ArticleListContent = styled.div`
   width: 100%;
   max-width: 1600px;
 
@@ -175,7 +176,7 @@ export const ArticlesListContent = styled.div`
     padding: 104px 148.5px;
   }
 
-  article {
+  a {
     display: none;
 
     @media (max-width: 425px) {
@@ -196,4 +197,7 @@ export const ArticlesListContent = styled.div`
       }
     }
   }
+`;
+
+export const ArticleListIten = styled(Link)`
 `;

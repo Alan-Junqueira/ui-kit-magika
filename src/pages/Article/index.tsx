@@ -1,12 +1,14 @@
 import React from 'react';
-import { ArticlesList } from './components/ArticlesList';
+import { useParams } from 'react-router-dom';
+
 import { ArticleHero } from './components/Hero';
 
 export const Article = () => {
+  const params = useParams();
+
   return (
     <>
-      <ArticleHero id="article-page--hero" />
-      <ArticlesList id="article-page--article-lists"/>
+      <ArticleHero articleId={params.id ? +params.id : 1} />
     </>
   );
 };

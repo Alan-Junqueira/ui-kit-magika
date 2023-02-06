@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { HeroContainer } from '../../../../components/Hero/styled';
 
-export const ArticleHeroContainer = styled(HeroContainer)``;
+export const ArticlesHeroContainer = styled(HeroContainer)``;
 
-export const ArticleHeroContent = styled.div`
+export const ArticlesHeroContent = styled.div`
   max-width: 1600px;
   width: 100%;
 
@@ -26,7 +26,7 @@ export const ArticleHeroContent = styled.div`
   }
 `;
 
-export const ArticleHeaderContent = styled.header`
+export const ArticlesHeaderContent = styled.header`
   display: grid;
   align-items: center;
   justify-content: space-between;
@@ -129,11 +129,11 @@ export const ArticleHeaderContent = styled.header`
   }
 `;
 
-type ArticleMainContentProps = {
+type ArticlesMainContentProps = {
   bgImage: string;
 };
 
-export const ArticleMainContent = styled.main<ArticleMainContentProps>`
+export const ArticlesMainContent = styled.main<ArticlesMainContentProps>`
   display: flex;
 
   @media (max-width: 768px) {

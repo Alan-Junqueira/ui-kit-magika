@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  ArticleHeaderContent,
-  ArticleHeroContainer,
-  ArticleHeroContent,
-  ArticleMainContent
+  ArticlesHeaderContent,
+  ArticlesHeroContainer,
+  ArticlesHeroContent,
+  ArticlesMainContent
 } from './styled';
 
 import semicolonImage from '/assets/images/article-semicolon.svg';
-import article1 from '/assets/images/article-1.png';
+import articles1 from '/assets/images/article-1.png';
 import { Button } from '../../../../components/Button';
 
 
@@ -16,11 +16,11 @@ interface IHero extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const ArticleHero = ({ ...props }: IHero) => {
   return (
-    <ArticleHeroContainer {...props}>
-      <ArticleHeroContent>
-        <ArticleHeaderContent>
+    <ArticlesHeroContainer {...props}>
+      <ArticlesHeroContent>
+        <ArticlesHeaderContent>
           <div className="header-texts">
-            <h1>Blog Article</h1>
+            <h1>Blog Articles</h1>
             <p>
               Here are the reasons why objects can be the most popular school
               today
@@ -29,9 +29,9 @@ export const ArticleHero = ({ ...props }: IHero) => {
           <div className="image">
             <img src={semicolonImage} alt="" />
           </div>
-        </ArticleHeaderContent>
-        <ArticleMainContent bgImage={article1}>
-          <div className="image">{/* <img src={article1} alt="" /> */}</div>
+        </ArticlesHeaderContent>
+        <ArticlesMainContent bgImage={articles1}>
+          <div className="image">{/* <img src={articles1} alt="" /> */}</div>
           <div className="main-content">
             <h2>Tips belajar menjadi menyenangkan</h2>
             <p>
@@ -41,8 +41,8 @@ export const ArticleHero = ({ ...props }: IHero) => {
             </p>
             <Button label="Read more" variant="big" />
           </div>
-        </ArticleMainContent>
-      </ArticleHeroContent>
-    </ArticleHeroContainer>
+        </ArticlesMainContent>
+      </ArticlesHeroContent>
+    </ArticlesHeroContainer>
   );
 };
