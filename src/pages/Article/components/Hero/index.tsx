@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { ArticleProps } from '../../../@types/article';
-import { TEMPORARY_ARTICLES } from '../../../services/database/articles';
-import { firstLetterUppercase } from '../../../utils/firstLetterUppercase';
-import { getMonth } from '../../../utils/getMonth';
+import { ArticleProps } from '../../../../@types/article';
+import { TEMPORARY_ARTICLES } from '../../../../services/database/articles';
+import { firstLetterUppercase } from '../../../../utils/firstLetterUppercase';
+import { getMonth } from '../../../../utils/getMonth';
 import {
   ArticleHeroContainer,
   ArticleHeroContent,

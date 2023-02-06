@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { ArticleDetails } from './components/ArticleDetails';
 
 import { ArticleHero } from './components/Hero';
 
@@ -8,7 +9,8 @@ export const Article = () => {
 
   return (
     <>
-      <ArticleHero articleId={params.id ? +params.id : 1} id="article--hero"/>
+      <ArticleHero articleId={params.id ? +params.id : 1} id="article--hero" />
+      <ArticleDetails id="article--details"/>
     </>
   );
 };
