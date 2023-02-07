@@ -6,6 +6,8 @@ export const ArticleListContainer = styled.section`
   align-items: center;
   flex-direction: column;
 
+  background: ${props => props.theme.colors.bg};
+
   @media (max-width: 425px) {
     padding-bottom: 56px;
   }

@@ -4,6 +4,8 @@ export const FeatureIconstContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background: ${props => props.theme.colors.bg};
 `;
 
 export const FeatureIconsContent = styled.div`

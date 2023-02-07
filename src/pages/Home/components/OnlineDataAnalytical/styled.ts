@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const OnlineDataAnalyticalContainer = styled.section`
-    display: flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
+
+  background: ${props => props.theme.colors.bg};
 `;
 
 export const OnlineDataAnalyticalContent = styled.div`

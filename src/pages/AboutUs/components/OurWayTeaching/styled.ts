@@ -4,6 +4,8 @@ export const OurWayTeachingContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background: ${props => props.theme.colors.bg};
 `;
 
 export const OurWayTeachingContent = styled.div`

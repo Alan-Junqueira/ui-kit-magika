@@ -21,8 +21,6 @@ export const ArticleHero = ({ articleId, ...props }: IArticlesHero) => {
     TEMPORARY_ARTICLES[0]
   );
 
-  console.log(articleId);
-
   useEffect(() => {
     TEMPORARY_ARTICLES.forEach((article) => {
       if (article.id === articleId) {

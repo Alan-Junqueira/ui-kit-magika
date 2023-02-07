@@ -10,7 +10,7 @@ export const Article = () => {
   return (
     <>
       <ArticleHero articleId={params.id ? +params.id : 1} id="article--hero" />
-      <ArticleDetails id="article--details"/>
+      <ArticleDetails id="article--details" />
     </>
   );
 };

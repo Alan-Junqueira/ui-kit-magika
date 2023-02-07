@@ -5,6 +5,8 @@ export const BetterGenerationContainer = styled.section`
   align-items: center;
   flex-direction: column;
 
+  background: ${props => props.theme.colors.bg};
+
   position: relative;
 `;
 
