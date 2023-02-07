@@ -4,12 +4,12 @@ import { ButtonContainer } from './styled';
 
 import buttonIcon from '/assets/images/button-icon.svg';
 
-interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   withIcon?: boolean;
   variant: 'big' | 'small';
   full?: boolean;
   label: string;
-  children?: ReactNode
+  children?: ReactNode;
 }
 
 export const Button = ({
@@ -25,7 +25,6 @@ export const Button = ({
       variant={variant}
       withIcon={withIcon}
       full={full}
-      type="button"
       {...props}
     >
       {label} <img src={buttonIcon} alt="" />

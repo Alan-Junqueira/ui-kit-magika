@@ -17,6 +17,17 @@ export const ButtonContainer = styled.button<IButtonContainer>`
 
   max-width: fit-content;
 
+  transition: all ease .3s;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    filter: brightness(1.15);
+  }
+
   img {
     display: none;
   }
@@ -66,6 +77,7 @@ export const ButtonContainer = styled.button<IButtonContainer>`
   ${(props) =>
     props.full &&
     css`
+      max-width: 100%;
       width: 100%;
     `};
 `;

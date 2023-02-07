@@ -53,7 +53,9 @@ export const NavBar = () => {
   return (
     <NavBarContainer>
       <NavBarContent>
-        <img src={logo} alt="" />
+        <Link to="/">
+          <img src={logo} alt="" />
+        </Link>
         <ul>
           <li>
             <Link to="/">Our Programs</Link>
