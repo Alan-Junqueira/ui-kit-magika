@@ -26,19 +26,26 @@ export const Footer = () => {
             sint. Velit officia consequat duis enim velit mollit.
           </p>
           <div className="social">
-            <a href="" className="facebook">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/Allann.Junnkh"
+              className="facebook"
+            >
               <FacebookLogo size={32} weight="fill" />
             </a>
-            <a href="">
+            <a target="_blank" href="https://twitter.com/_alanjunqueira">
               <TwitterLogo size={32} weight="fill" />
             </a>
-            <a href="">
+            <a target="_blank" href="https://www.instagram.com/_alanjunqueira/">
               <InstagramLogo size={32} weight="fill" />
             </a>
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/alan-junqueira/"
+            >
               <LinkedinLogo size={32} weight="fill" />
             </a>
-            <a href="">
+            <a target="_blank" href="https://www.youtube.com/@_alanjunqueira">
               <YoutubeLogo size={32} weight="fill" />
             </a>
           </div>
@@ -50,46 +57,46 @@ export const Footer = () => {
               <a href="">Home</a>
             </li>
             <li>
-              <a href="/portfolios">Portfolios</a>
+              <a href="/">Portfolios</a>
             </li>
             <li>
-              <a href="/services">Services</a>
+              <a href="/">Services</a>
             </li>
             <li>
-              <a href="/works">Works</a>
+              <a href="/">Works</a>
             </li>
             <li>
-              <a href="/carrer">Carrer</a>
+              <a href="/">Carrer</a>
             </li>
           </ul>
           <ul>
             <span>Company</span>
             <li>
-              <a href="/terms">Terms Conditions</a>
+              <a href="/">Terms Conditions</a>
             </li>
             <li>
-              <a href="/policy">Privacy Policy</a>
+              <a href="/">Privacy Policy</a>
             </li>
             <li>
-              <a href="/cookies">Cookies</a>
+              <a href="/">Cookies</a>
             </li>
             <li>
-              <a href="/carrers">Careers</a>
+              <a href="/">Careers</a>
             </li>
           </ul>
           <ul>
             <span>Community</span>
             <li>
-              <a href="/help">Help Center</a>
+              <a href="/">Help Center</a>
             </li>
             <li>
-              <a href="/forum">Forum</a>
+              <a href="/">Forum</a>
             </li>
             <li>
-              <a href="/webinars">Webinars</a>
+              <a href="/">Webinars</a>
             </li>
             <li>
-              <a href="Professionals">Professionals</a>
+              <a href="">Professionals</a>
             </li>
           </ul>
         </FooterNavigation>

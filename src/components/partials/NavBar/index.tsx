@@ -58,7 +58,7 @@ export const NavBar = () => {
         </Link>
         <ul>
           <li>
-            <Link to="/">Our Programs</Link>
+            <Link to="/programs">Our Programs</Link>
           </li>
           <li>
             <Link to="/">Awards</Link>
@@ -90,7 +90,7 @@ export const NavBar = () => {
               onMouseLeave={handleMenuMouseLeave}
             >
               <li className="programs">
-                <Link to="/">Our Programs</Link>
+                <Link to="/programs">Our Programs</Link>
               </li>
               <li>
                 <Link to="/">Awards</Link>

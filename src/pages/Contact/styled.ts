@@ -346,7 +346,7 @@ export const ContactFormRoleButton = styled(RadioGroup.Item)`
 `;
 
 type ContactPolygonProps = {
-  variant: 'blue' | 'red' | 'orange';
+  variant: 'blue' | 'red' | 'orange' | 'yellow';
   top?: number;
   right?: number;
   bottom?: number;
@@ -451,6 +451,13 @@ export const ContactPolygon = styled.div<ContactPolygonProps>`
     props.variant === 'orange' &&
     css`
       background-color: ${(props) => props.theme.colors['brand-3']};
+      animation-duration: 6s;
+    `};
+
+  ${(props) =>
+    props.variant === 'yellow' &&
+    css`
+      background-color: ${(props) => props.theme.colors.yellow};
       animation-duration: 6s;
     `};
 

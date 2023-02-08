@@ -19,7 +19,6 @@ import {
 import { Button } from '../../components/Button';
 
 import womanImage from '/assets/images/contact-woman.png';
-import { Link } from 'react-router-dom';
 
 const formInfoSchema = z.object({
   fullName: z.string().min(5, { message: 'Digite seu nome completo' }),
@@ -51,12 +50,16 @@ export const Contact = ({ ...props }: IContact) => {
   });
 
   const handleRegistration = async (data: ApplyFormInputs) => {
-    await new Promise((resolver) => setTimeout(resolver, 2000));
-    if (data.phoneNumber === data.phoneNumberValidation) {
-      console.log(data);
-    } else {
-      alert('Números de telefone diferentes');
-    }
+    await new Promise((resolver, reject) =>
+      setTimeout(() => {
+        if (data.phoneNumber === data.phoneNumberValidation) {
+          return resolver(console.log(data));
+        } else {
+          alert('Números de telefone diferentes');
+          return reject();
+        }
+      }, 2000)
+    );
   };
 
   return (
