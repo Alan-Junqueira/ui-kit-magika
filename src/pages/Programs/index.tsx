@@ -1,10 +1,12 @@
-import React from 'react'
-import { ProgramsHero } from './components/Hero'
+import React from 'react';
+import { ProgramsHero } from './components/Hero';
+import { InformaticEngineering } from './components/InformaticEngineering';
 
 export const Programs = () => {
   return (
     <>
-      <ProgramsHero />
+      <ProgramsHero id="programs-hero" />
+      <InformaticEngineering id="programs--informatic-engineering"/>
     </>
-  )
-}
+  );
+};

@@ -31,7 +31,7 @@ export const ArticleHero = ({ ...props }: IHero) => {
           </div>
         </ArticlesHeaderContent>
         <ArticlesMainContent bgImage={articles1}>
-          <div className="image">{/* <img src={articles1} alt="" /> */}</div>
+          <div className="image"></div>
           <div className="main-content">
             <h2>Tips belajar menjadi menyenangkan</h2>
             <p>
