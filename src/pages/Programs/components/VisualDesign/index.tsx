@@ -7,22 +7,19 @@ import {
   ProgramsStatisticsCard,
   ProgramsTitle
 } from '../../styled';
-import {
-  InformaticEngineeringContainer,
-  InformaticEngineeringContent
-} from './styled';
+import { VisualDesignContainer, VisualDesignContent } from './styled';
 
-import informaticEngineering from '/assets/images/programs-informatic-engineering.png';
+import visualDesign from '/assets/images/programs-visual-design.png';
 
-interface IInformaticEngineering extends SectionInterface {}
+interface IVisualDesign extends SectionInterface {}
 
-export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
+export const VisualDesign = ({ ...props }: IVisualDesign) => {
   return (
-    <InformaticEngineeringContainer {...props}>
-      <InformaticEngineeringContent>
-        <ProgramsMainInfo localImage="right" bgImage="yellow">
+    <VisualDesignContainer {...props}>
+      <VisualDesignContent>
+        <ProgramsMainInfo localImage="left" bgImage="red">
           <div className="content">
-            <ProgramsTitle>Informatic Engineering</ProgramsTitle>
+            <ProgramsTitle>Visual Designer</ProgramsTitle>
             <ProgramsDescription>
               Make it easier for all students to do learning through digital
               media with existing media making it easier for students to learn
@@ -30,10 +27,10 @@ export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
             </ProgramsDescription>
           </div>
           <div className="image">
-            <img src={informaticEngineering} alt="" />
+            <img src={visualDesign} alt="" />
           </div>
         </ProgramsMainInfo>
-        <ProgramsStatistics>
+        <ProgramsStatistics positionRight>
           <ProgramsStatisticsCard variant="transparent">
             <strong>1029+</strong>
             <small>Worldwide Student</small>
@@ -43,7 +40,7 @@ export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
             <small>Awwards</small>
           </ProgramsStatisticsCard>
         </ProgramsStatistics>
-      </InformaticEngineeringContent>
-    </InformaticEngineeringContainer>
+      </VisualDesignContent>
+    </VisualDesignContainer>
   );
 };

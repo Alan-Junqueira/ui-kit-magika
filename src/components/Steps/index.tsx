@@ -10,14 +10,14 @@ import {
   StepsPolygon
 } from './styled';
 
-import { Banner } from '../../../../components/Banner';
-import { List } from '../../../../components/List';
 
 import womanImage from '/assets/images/home-hero-testimonial2.png';
 import menImage from '/assets/images/home-hero-testimonial1.png';
 import arrowDown from '/assets/images/steps-down-arrow.svg';
 import shapesSteps from '/assets/images/shape-steps.png';
 import stepListSpring from '/assets/images/step-list-spring.png';
+import { List } from '../List';
+import { Banner } from '../Banner';
 
 interface ISteps extends React.HTMLAttributes<HTMLDivElement> {}
 

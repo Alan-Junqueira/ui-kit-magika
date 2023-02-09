@@ -1,11 +1,11 @@
 import React from 'react';
+import { Steps } from '../../components/Steps';
 import { Awards } from './components/Awards';
 import { FeatureIcons } from './components/FeatureIcons';
 import { HomeHero } from './components/Hero';
 import { OnlineDataAnalytical } from './components/OnlineDataAnalytical';
 import { ReadBlogs } from './components/ReadBlogs';
 import { SpecifyTheTime } from './components/SpecifyTheTime';
-import { Steps } from './components/Steps';
 import { SupportedPremiumSoftware } from './components/SupportedPremiumSoftware';
 
 export const Home = () => {

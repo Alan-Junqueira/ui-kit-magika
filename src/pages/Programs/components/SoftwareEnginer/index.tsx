@@ -7,22 +7,19 @@ import {
   ProgramsStatisticsCard,
   ProgramsTitle
 } from '../../styled';
-import {
-  InformaticEngineeringContainer,
-  InformaticEngineeringContent
-} from './styled';
+import { SoftwareEnginerContainer, SoftwareEnginerContent } from './styled';
 
-import informaticEngineering from '/assets/images/programs-informatic-engineering.png';
+import softwareEnginer from '/assets/images/programs-software-enginer.png';
 
-interface IInformaticEngineering extends SectionInterface {}
+interface ISoftwareEnginer extends SectionInterface {}
 
-export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
+export const SoftwareEnginer = ({ ...props }: ISoftwareEnginer) => {
   return (
-    <InformaticEngineeringContainer {...props}>
-      <InformaticEngineeringContent>
-        <ProgramsMainInfo localImage="right" bgImage="yellow">
+    <SoftwareEnginerContainer {...props}>
+      <SoftwareEnginerContent>
+        <ProgramsMainInfo localImage="left" bgImage="orange">
           <div className="content">
-            <ProgramsTitle>Informatic Engineering</ProgramsTitle>
+            <ProgramsTitle>Software Enginer</ProgramsTitle>
             <ProgramsDescription>
               Make it easier for all students to do learning through digital
               media with existing media making it easier for students to learn
@@ -30,10 +27,10 @@ export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
             </ProgramsDescription>
           </div>
           <div className="image">
-            <img src={informaticEngineering} alt="" />
+            <img src={softwareEnginer} alt="" />
           </div>
         </ProgramsMainInfo>
-        <ProgramsStatistics>
+        <ProgramsStatistics positionRight>
           <ProgramsStatisticsCard variant="transparent">
             <strong>1029+</strong>
             <small>Worldwide Student</small>
@@ -43,7 +40,7 @@ export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
             <small>Awwards</small>
           </ProgramsStatisticsCard>
         </ProgramsStatistics>
-      </InformaticEngineeringContent>
-    </InformaticEngineeringContainer>
+      </SoftwareEnginerContent>
+    </SoftwareEnginerContainer>
   );
 };

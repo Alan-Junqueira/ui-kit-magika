@@ -7,22 +7,19 @@ import {
   ProgramsStatisticsCard,
   ProgramsTitle
 } from '../../styled';
-import {
-  InformaticEngineeringContainer,
-  InformaticEngineeringContent
-} from './styled';
+import { ElectricalEngineeringContainer, ElectricalEngineeringContent } from './styled';
 
-import informaticEngineering from '/assets/images/programs-informatic-engineering.png';
+import electricalEngineering from '/assets/images/programs-electrical-engineering.png';
 
-interface IInformaticEngineering extends SectionInterface {}
+interface IElectricalEngineering extends SectionInterface {}
 
-export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
+export const ElectricalEngineering = ({ ...props }: IElectricalEngineering) => {
   return (
-    <InformaticEngineeringContainer {...props}>
-      <InformaticEngineeringContent>
-        <ProgramsMainInfo localImage="right" bgImage="yellow">
+    <ElectricalEngineeringContainer {...props}>
+      <ElectricalEngineeringContent>
+        <ProgramsMainInfo localImage="right" bgImage="blue">
           <div className="content">
-            <ProgramsTitle>Informatic Engineering</ProgramsTitle>
+            <ProgramsTitle>Electrical Engineering</ProgramsTitle>
             <ProgramsDescription>
               Make it easier for all students to do learning through digital
               media with existing media making it easier for students to learn
@@ -30,7 +27,7 @@ export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
             </ProgramsDescription>
           </div>
           <div className="image">
-            <img src={informaticEngineering} alt="" />
+            <img src={electricalEngineering} alt="" />
           </div>
         </ProgramsMainInfo>
         <ProgramsStatistics>
@@ -43,7 +40,7 @@ export const InformaticEngineering = ({ ...props }: IInformaticEngineering) => {
             <small>Awwards</small>
           </ProgramsStatisticsCard>
         </ProgramsStatistics>
-      </InformaticEngineeringContent>
-    </InformaticEngineeringContainer>
+      </ElectricalEngineeringContent>
+    </ElectricalEngineeringContainer>
   );
 };

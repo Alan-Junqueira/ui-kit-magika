@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { HeroContainer } from '../../../../components/Hero/styled';
+import { HeroContainer } from '../Hero/styled';
 
 export const StepsContainer = styled(HeroContainer)`
   display: flex;
