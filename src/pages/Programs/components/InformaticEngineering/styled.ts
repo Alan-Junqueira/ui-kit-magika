@@ -4,6 +4,8 @@ export const InformaticEngineeringContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background-color: ${(props) => props.theme.colors.bg};
 `;
 
 export const InformaticEngineeringContent = styled.div`
