@@ -164,6 +164,12 @@ export const FooterHeader = styled.header`
 
       background-color: ${(props) => props.theme.colors['brand-3']};
 
+      transition: all ease .3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
       svg {
         width: 18px;
         height: auto;

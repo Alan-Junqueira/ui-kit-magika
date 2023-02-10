@@ -14,7 +14,7 @@ export const Programs = () => {
       <SoftwareEnginer id="programs--software-enginer" />
       <ElectricalEngineering id="programs--electrical-engineering" />
       <VisualDesign id="programs--visual-design" />
-      <Steps id="programs--steps"/>
+      <Steps id="programs--steps" />
     </>
   );
 };

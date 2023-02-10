@@ -8,6 +8,8 @@ export const NavBarContainer = styled.header`
 `;
 
 export const NavBarContent = styled.nav`
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,43 +89,43 @@ export const NavBarContent = styled.nav`
     @media (min-width: 971px) {
       display: none;
     }
+  }
+  ul.mobile {
+    display: flex;
 
-    > ul.mobile {
-      display: none;
-      @media (max-width: 970px) {
-        position: absolute;
-        top: 130%;
-        right: -50%;
+    @media (max-width: 970px) {
+      position: absolute;
+      top: 100px;
+      right: 0;
 
+      z-index: 100;
+
+      display: flex;
+      flex-direction: column;
+
+      border: 1px solid ${(props) => props.theme.colors['white-2']};
+      overflow: hidden;
+      border-radius: 8px;
+
+      li {
         display: flex;
-        flex-direction: column;
+        align-items: center;
 
-        border: 1px solid ${(props) => props.theme.colors['white-2']};
-        overflow: hidden;
-        border-radius: 8px;
+        padding: 8px 16px;
 
-        z-index: 100;
+        width: 250px;
+        height: 50px;
 
-        li {
-          display: flex;
-          align-items: center;
+        background: rgba(0, 0, 0, 0.8);
 
-          padding: 8px 16px;
+        &:hover {
+          background: ${(props) => props.theme.colors.primary};
+        }
 
-          width: 250px;
-          height: 50px;
-
-          background: rgba(0, 0, 0, 0.8);
-
-          &:hover {
-            background: ${(props) => props.theme.colors.primary};
-          }
-
-          a {
-            width: 100%;
-            color: ${(props) => props.theme.colors['white-2']};
-            text-align: start;
-          }
+        a {
+          width: 100%;
+          color: ${(props) => props.theme.colors['white-2']};
+          text-align: start;
         }
       }
     }
