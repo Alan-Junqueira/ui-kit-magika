@@ -8,6 +8,7 @@ import { Articles } from './pages/Articles';
 import { Article } from './pages/Article';
 import { Contact } from './pages/Contact';
 import { Programs } from './pages/Programs';
+import { Carrer } from './pages/Carrer';
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
       <Route path="/article/:id" element={<Article />} />"
       <Route path="/contact" element={<Contact />} />
       <Route path='/programs' element={<Programs />} />
+      <Route path='/carrer' element={<Carrer />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

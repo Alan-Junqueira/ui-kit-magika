@@ -8,6 +8,7 @@ export const defaultTheme = {
     green: '#14A800',
     yellow: '#FFC947',
     bg: '#F7F5ED',
+    navBg: '#0E0C19',
     'white-1': '#ffffff',
     'white-2': '#FAFAFA',
     'brand-1': '#0000FF',

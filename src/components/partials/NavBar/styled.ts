@@ -5,6 +5,10 @@ export const NavBarContainer = styled.header`
   align-items: center;
   flex-direction: column;
   background-color: ${(props) => props.theme.colors.black};
+
+  @media (min-width: 971px) and (max-width: 1199px) {
+    background-color: ${(props) => props.theme.colors.navBg};
+  }
 `;
 
 export const NavBarContent = styled.nav`
@@ -91,9 +95,10 @@ export const NavBarContent = styled.nav`
     }
   }
   ul.mobile {
-    display: flex;
+    display: none;
 
     @media (max-width: 970px) {
+      display: flex;
       position: absolute;
       top: 100px;
       right: 0;
