@@ -6,11 +6,10 @@ import {
   ArticlesMainContent
 } from './styled';
 
-import semicolonImage from '/assets/images/article-semicolon.svg';
-import articles1 from '/assets/images/article-1.png';
 import { Button } from '../../../../components/Button';
 
-
+import semicolonImage from '/assets/images/article-semicolon.svg';
+import articles1 from '/assets/images/article-1.png';
 
 interface IHero extends React.HTMLAttributes<HTMLDivElement> {}
 
