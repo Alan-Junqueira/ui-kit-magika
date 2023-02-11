@@ -14,6 +14,7 @@ import {
   TwitterLogo,
   YoutubeLogo
 } from 'phosphor-react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -66,7 +67,7 @@ export const Footer = () => {
               <a href="/">Works</a>
             </li>
             <li>
-              <a href="/">Carrer</a>
+              <Link to="/carrer">Carrer</Link>
             </li>
           </ul>
           <ul>
