@@ -1,6 +1,6 @@
 import React from 'react';
-import { SectionInterface } from '../../../@types/sectionInterface';
-import { Polygon } from '../../../components/Polygon';
+import { SectionInterface } from '../../../../@types/sectionInterface';
+import { Polygon } from '../../../../components/Polygon';
 import {
   JoinUsContainer,
   JoinUsContent,

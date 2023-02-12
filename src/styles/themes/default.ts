@@ -19,6 +19,7 @@ export const defaultTheme = {
     'grey-3': '#DADCE2',
     'banner-secondary':
       'radial-gradient(127.68% 423.02% at 31.82% -13.39%, #FFE600 12.5%, #FF9702 100%)',
+    'polygon-red': 'linear-gradient(106.8deg, #EE2A31 -44.73%, #ED1C24 109.42%)',
 
     beige: '#f3d1bf',
 

@@ -43,7 +43,7 @@ export const JoinUsContent = styled.div`
   }
 `;
 
-export const JoinUsTitle = styled.h1`
+export const JoinUsTitle = styled.h2`
   font-weight: 700;
   color: ${(props) => props.theme.colors.black};
 

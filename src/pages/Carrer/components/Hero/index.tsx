@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionInterface } from '../../../@types/sectionInterface';
+import { SectionInterface } from '../../../../@types/sectionInterface';
 import {
   CarrerHeroContainer,
   CarrerHeroContent,

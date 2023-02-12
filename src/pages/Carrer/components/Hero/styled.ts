@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Hero } from '../../../components/Hero';
+import { Hero } from '../../../../components/Hero';
 
 export const CarrerHeroContainer = styled(Hero)``;
 
