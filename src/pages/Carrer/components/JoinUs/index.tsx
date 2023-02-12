@@ -17,9 +17,9 @@ export const JoinUs = ({ ...props }: IJoinUs) => {
         <JoinUsTitle>
           join us, get the best work experience.
           <Polygon variant="red" className="full" bottom={-40} left={50} />
-          <Polygon variant="blue" className="full" right={25} top={-25} />
+          <Polygon variant="blue" className="full" right={25} top={-30} />
           <Polygon variant="orange" className="full" left={-88} top={40} />
-          <Polygon variant="yellow" className="full" right={-10} top={50} />
+          <Polygon variant="yellow" className="full" right={-30} top={50} />
           <Polygon variant="red" className="md" right={30} top={-20} />
           <Polygon variant="blue" className="md" left={10} top={-15} />
           <Polygon variant="yellow" className="md" right={50} bottom={-15} />

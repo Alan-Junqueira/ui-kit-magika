@@ -8,7 +8,10 @@ interface IButtonContainer {
 
 export const ButtonContainer = styled.button<IButtonContainer>`
   position: relative;
+
   line-height: 24px;
+  font-size: ${props => props.theme.sizes.base};
+  
   color: ${(props) => props.theme.colors['white-1']};
 
   background: ${(props) => props.theme.colors.primary};

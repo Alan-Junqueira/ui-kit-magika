@@ -5,6 +5,9 @@ import { OpenRoleCard } from './components/OpenRoleCard';
 import { CarrerContainer } from './styled';
 
 import visualDesignImage from '/assets/images/carrer-visual-design.svg';
+import carrerBagImage from '/assets/images/carrer-bag.svg';
+import carrerEngineerImage from '/assets/images/carrer-engineer.svg';
+import { Register } from './components/Register';
 
 export const Carrer = () => {
   return (
@@ -18,6 +21,7 @@ export const Carrer = () => {
         occupiedVacancies={1}
         role="Visual Designer"
         roleImage={visualDesignImage}
+        id="carrer--visual-designer"
       />
       <OpenRoleCard
         descriptionTitle="skills that you should master in this field."
@@ -25,7 +29,8 @@ export const Carrer = () => {
         description="Make it easier for all students to do learning through digital media with existing media making it easier for students to learn anywhere and anytime."
         occupiedVacancies={0}
         role="Admin Staff"
-        roleImage={visualDesignImage}
+        roleImage={carrerBagImage}
+        id="carrer--admin-staff"
       />
       <OpenRoleCard
         descriptionTitle="skills that you should master in this field."
@@ -33,7 +38,8 @@ export const Carrer = () => {
         description="Make it easier for all students to do learning through digital media with existing media making it easier for students to learn anywhere and anytime."
         occupiedVacancies={0}
         role="Teacher"
-        roleImage={visualDesignImage}
+        roleImage={carrerBagImage}
+        id="carrer--teacher"
       />
       <OpenRoleCard
         descriptionTitle="skills that you should master in this field."
@@ -41,8 +47,10 @@ export const Carrer = () => {
         description="Make it easier for all students to do learning through digital media with existing media making it easier for students to learn anywhere and anytime."
         occupiedVacancies={1}
         role="Software Enginer"
-        roleImage={visualDesignImage}
+        roleImage={carrerEngineerImage}
+        id="carrer--software-engineer"
       />
+      <Register id="carrer--register" />
       <Banner variant="secondary" />
     </CarrerContainer>
   );

@@ -4,6 +4,8 @@ export const OpenRoleCardContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background-color: ${(props) => props.theme.colors.bg}; ;
 `;
 
 export const OpenRoleCardContent = styled.div`
