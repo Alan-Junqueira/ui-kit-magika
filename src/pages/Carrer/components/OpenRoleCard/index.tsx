@@ -1,7 +1,17 @@
 import React from 'react';
 import { SectionInterface } from '../../../../@types/sectionInterface';
 import { List } from '../../../../components/List';
-import { OpenRoleCardContainer, OpenRoleCardContent } from './styled';
+import {
+  OpenRoleCardContainer,
+  OpenRoleCardContent,
+  RoleContainer,
+  OpenRoleImagePolygon,
+  OpenRoleTitle,
+  VacancyContainer,
+  OpenRoleDescription,
+  OpenRoleDescriptionTitle,
+  OpenRoleDescriptionTexts
+} from './styled';
 
 interface IOpenRoleCard extends SectionInterface {
   role: string;
@@ -24,32 +34,35 @@ export const OpenRoleCard = ({
   return (
     <OpenRoleCardContainer {...props}>
       <OpenRoleCardContent>
-        <div className="role">
-          <div className="img">
+        <RoleContainer className="role">
+          <OpenRoleImagePolygon>
             <img src={roleImage} alt="" />
-          </div>
-          <h3>{role}</h3>
-          <div className="vacancy">
+          </OpenRoleImagePolygon>
+          <OpenRoleTitle>{role}</OpenRoleTitle>
+          <VacancyContainer>
             <span>
               {occupiedVacancies < 10
                 ? `0${occupiedVacancies}`
                 : occupiedVacancies}
             </span>
+            /
             <span>
               {avaliableVacancies < 10
                 ? `0${avaliableVacancies}`
                 : avaliableVacancies}
             </span>
+          </VacancyContainer>
+        </RoleContainer>
+        <OpenRoleDescriptionTexts>
+          <OpenRoleDescriptionTitle>
+            {descriptionTitle}
+          </OpenRoleDescriptionTitle>
+          <OpenRoleDescription>{description}</OpenRoleDescription>
+          <div className="workplace">
+            <List color="dark" label="On Site" variant="lg" imageBg="blue" />
+            <List color="dark" label="Flexibel" variant="lg" imageBg="red" />
           </div>
-          <div className="description">
-            <h4>{descriptionTitle}</h4>
-            <p>{description}</p>
-            <div className="workplace">
-              <List color="dark" label="On Site" variant="lg" imageBg="blue" />
-              <List color="dark" label="Flexibel" variant="lg" imageBg="red" />
-            </div>
-          </div>
-        </div>
+        </OpenRoleDescriptionTexts>
       </OpenRoleCardContent>
     </OpenRoleCardContainer>
   );

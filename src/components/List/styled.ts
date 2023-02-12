@@ -31,12 +31,12 @@ export const ListContainer = styled.div<ListContainerProps>`
     ${(props) =>
       props.imageBg === 'blue' &&
       css`
-        ${(props) => props.theme.colors['brand-1']};
+        background: ${(props) => props.theme.colors['brand-1']};
       `};
     ${(props) =>
       props.imageBg === 'red' &&
       css`
-        ${(props) => props.theme.colors['polygon-red']};
+        background: ${(props) => props.theme.colors['polygon-red']};
       `};
 
     img {
