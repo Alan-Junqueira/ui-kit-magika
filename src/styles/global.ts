@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${(props) => props.theme.sizes.base};
     -webkit-font-smoothing: antialiased;
 
-    background-color: ${(props) => props.theme.colors['white-1']};
+    background-color: ${(props) => props.theme.colors.bg};
   }
 
   ul, li {
