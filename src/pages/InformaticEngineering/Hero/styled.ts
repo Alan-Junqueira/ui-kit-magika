@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import { Hero } from '../../components/Hero';
-import { HeroContainer } from '../../components/Hero/styled';
+import { HeroContainer } from '../../../components/Hero/styled';
 
-export const InformaticEngineeringContainer = styled(HeroContainer)`
+export const InformaticHeroContainer = styled(HeroContainer)`
   display: flex;
   align-items: center;
   flex-direction: column;
 `;
 
-export const InformaticEngineeringContent = styled.div`
+export const InformaticHeroContent = styled.div`
   width: 100%;
   max-width: 1600px;
 
@@ -41,11 +40,11 @@ export const InformaticEngineeringContent = styled.div`
   }
 `;
 
-export const InformaticEngineeringHeroTexts = styled.div`
+export const InformaticHeroTexts = styled.div`
   grid-area: texts;
 `;
 
-export const InformaticEngineeringHeroTitle = styled.h1`
+export const InformaticHeroTitle = styled.h1`
   font-weight: 700;
 
   color: ${(props) => props.theme.colors['white-1']};
@@ -85,7 +84,7 @@ export const InformaticEngineeringHeroTitle = styled.h1`
   }
 `;
 
-export const InformaticEngineeringHeroDescription = styled.p`
+export const InformaticHeroDescription = styled.p`
   font-weight: 400;
   color: ${(props) => props.theme.colors['white-1']};
   opacity: 0.8;
@@ -116,7 +115,7 @@ export const InformaticEngineeringHeroDescription = styled.p`
   }
 `;
 
-export const InformaticEngineeringHeroImage = styled.div`
+export const InformaticHeroImage = styled.div`
   grid-area: image;
   position: relative;
 

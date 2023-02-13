@@ -25,6 +25,8 @@ export const defaultTheme = {
 
     'orange-100': '#FF9702',
 
+    'blue-100': '#0001F1',
+
     'yellow-100': '#FBDD00',
     'yellow-200': '#FFC700',
     'gray-100': ' #51535e',
