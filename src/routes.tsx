@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 
-import React from 'react';
 import { NotFound } from './pages/NotFound';
 import { Home } from './pages/Home';
 import { AboutUs } from './pages/AboutUs';
@@ -9,6 +8,7 @@ import { Article } from './pages/Article';
 import { Contact } from './pages/Contact';
 import { Programs } from './pages/Programs';
 import { Carrer } from './pages/Carrer';
+import { InformaticsEngineering } from './pages/InformaticEngineering';
 
 const AppRoutes = () => {
   return (
@@ -18,8 +18,12 @@ const AppRoutes = () => {
       <Route path="/article" element={<Articles />} />"
       <Route path="/article/:id" element={<Article />} />"
       <Route path="/contact" element={<Contact />} />
-      <Route path='/programs' element={<Programs />} />
-      <Route path='/carrer' element={<Carrer />} />
+      <Route path="/programs" element={<Programs />} />
+      <Route
+        path="/programs/informatics-engineerings"
+        element={<InformaticsEngineering />}
+      />
+      <Route path="/carrer" element={<Carrer />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

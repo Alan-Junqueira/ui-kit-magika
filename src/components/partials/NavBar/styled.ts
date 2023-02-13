@@ -36,7 +36,7 @@ export const NavBarContent = styled.nav`
     max-width: 122px;
   }
 
-  ul {
+  > ul {
     display: flex;
     flex: 1;
     align-items: center;
@@ -58,7 +58,7 @@ export const NavBarContent = styled.nav`
       display: none;
     }
 
-    li:nth-child(1) {
+    > li:nth-child(1) {
       position: relative;
       padding-right: 28px;
       cursor: pointer;
@@ -79,6 +79,31 @@ export const NavBarContent = styled.nav`
 
         @media (max-width: 970px) {
           right: 16px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        bottom: -100px;
+        left: -30px;
+
+        z-index: 100;
+        width: 200px;
+
+        border: 1px solid ${(props) => props.theme.colors['white-2']};
+        overflow: hidden;
+        border-radius: 4px;
+
+        li {
+          text-align: center;
+          padding-block: 8px;
+
+          &:hover {
+            background: ${(props) => props.theme.colors.primary};
+          }
         }
       }
     }
@@ -125,6 +150,35 @@ export const NavBarContent = styled.nav`
 
         &:hover {
           background: ${(props) => props.theme.colors.primary};
+        }
+
+        &.program {
+          opacity: 0.9;
+          background: ${(props) => props.theme.colors.green};
+
+          &:hover {
+            background: ${(props) => props.theme.colors.primary};
+          }
+        }
+
+        &.first-program {
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: '';
+            border-style: solid;
+            border-color: ${(props) => props.theme.colors.green} transparent
+              transparent;
+            border-width: 12px 16px 0;
+            height: 0;
+            width: 0;
+
+            left: 15px;
+            top: -11px;
+
+            transform: rotate(-180deg);
+          }
         }
 
         a {

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { NotFoundContainer, NotFoundContent, NotFoundPolygon } from './styled';
+import { Polygon } from '../../components/Polygon';
+import { NotFoundContainer, NotFoundContent } from './styled';
 
 export const NotFound = () => {
   return (
@@ -7,16 +8,16 @@ export const NotFound = () => {
       <NotFoundContent>
         <div className="numbers">
           <span className="left-four">
-            <NotFoundPolygon variant="yellow" left={20} top={0} />
-            <NotFoundPolygon variant="yellow" left={-30} bottom={43} />
-            <NotFoundPolygon variant="blue" right={-30} top={40} />
-            <NotFoundPolygon variant="orange" right={15} bottom={-40} />4
+            <Polygon variant="yellow" left={20} top={0} />
+            <Polygon variant="yellow" left={-30} bottom={43} />
+            <Polygon variant="blue" right={-30} top={40} />
+            <Polygon variant="orange" right={15} bottom={-40} />4
           </span>
           <span className="center-zero">0</span>
           <span className="right-four">
-            <NotFoundPolygon variant="red" bottom={5} left={40} />
-            <NotFoundPolygon variant="yellow" top={40} left={-20} />
-            <NotFoundPolygon variant="blue" bottom={45} right={-45} />4
+            <Polygon variant="red" bottom={5} left={40} />
+            <Polygon variant="yellow" top={40} left={-20} />
+            <Polygon variant="blue" bottom={45} right={-45} />4
           </span>
         </div>
         <p>
