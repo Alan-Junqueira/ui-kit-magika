@@ -30,6 +30,7 @@ export const defaultTheme = {
     'yellow-100': '#FBDD00',
     'yellow-200': '#FFC700',
     'gray-100': ' #51535e',
+    'gray-200': '#3A3C56',
     'gray-500': '#bababa',
     'gray-600': '#181818'
   },
