@@ -1,3 +1,5 @@
+import Fade from 'react-reveal/Fade';
+
 import { Banner } from '../../components/Banner';
 
 import { GetToKnow } from './GetToKnow';
@@ -10,9 +12,11 @@ export const InformaticsEngineering = () => {
   return (
     <InformaticsEngineeringContainer>
       <InformaticsHero id="informatics-engineering--hero" />
-      <ThingsToLearn id="informatics-engineering--things-to-learn" />
-      <GetToKnow id="informatics-engineering--get-to-know" />
-      <Schedule id="informatics-engineering--schedule" />
+      <Fade left>
+        <ThingsToLearn id="informatics-engineering--things-to-learn" />
+        <GetToKnow id="informatics-engineering--get-to-know" />
+        <Schedule id="informatics-engineering--schedule" />
+      </Fade>
       <Banner variant="secondary" />
     </InformaticsEngineeringContainer>
   );

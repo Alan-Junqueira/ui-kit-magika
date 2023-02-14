@@ -78,7 +78,7 @@ export const NavBar = () => {
             )}
           </li>
           <li>
-            <Link to="/">Awards</Link>
+            <Link to="/professionals">Professionals</Link>
           </li>
           <li>
             <Link to="/about">About Us</Link>
@@ -119,7 +119,7 @@ export const NavBar = () => {
               </Link>
             </li>
             <li onClick={() => setShow(false)}>
-              <Link to="/">Awards</Link>
+              <Link to="/professionals">Professionals</Link>
             </li>
             <li onClick={() => setShow(false)}>
               <Link to="/about">About Us</Link>

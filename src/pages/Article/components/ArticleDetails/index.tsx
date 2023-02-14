@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import Fade from 'react-reveal/Fade';
 
 import { TEMPORARY_ARTICLES } from '../../../../services/database/articles';
 
@@ -54,70 +55,72 @@ export const ArticleDetails = ({ ...props }: IArticleDetails) => {
     <ArticleDetailsContainer {...props}>
       <ArticleDetailsContent>
         <ArticleDetailsMainContent>
-          <h5>
-            Agency provides a full service range including technical skills,
-            design, business understanding.
-          </h5>
-          <p>
-            Outsource your digital marketing efforts, instead of handling
-            in-house. They can provide your business with a variety of digital
-            solutions to promote your product or service online and help you.
-          </p>
-          <h4>Promote your product</h4>
-          <p>
-            Ability to put themselves in the merchant's shoes. It is meant to
-            partner on the long run, and work as an extension of the merchant's
-            team.
-          </p>
-          <div className="our-qualities">
-            <span>Digital Marketing</span>
-            <span>Efforts instead</span>
-            <span>Handling in-house</span>
-          </div>
-          <p>
-            A digital agency is a business you hire to outsource your digital
-            marketing efforts, instead of handling in-house. They can provide
-            your business with a variety of digital solutions to promote your
-            product or service online and help you.
-          </p>
-          <h4>Service online and help</h4>
-          <p>
-            Put themselves in the merchant's shoes. It is meant to partner on
-            the long run, and work as an extension of the merchant's team.
-          </p>
-          <p>1. Marketing efforts</p>
-          <p>2. Instead of handling</p>
-          <p>3. n-house</p>
-          <p>
-            Agency is a business you hire to outsource your digital marketing
-            efforts, instead of handling in-house. They can provide your
-            business with a variety of digital solutions to promote your product
-            or service online and help you.
-          </p>
-          <blockquote cite="">
-            <img src={bloquoteShape} alt="" />
+          <Fade left>
+            <h5>
+              Agency provides a full service range including technical skills,
+              design, business understanding.
+            </h5>
             <p>
-              Provide your business with a variety of digital solutions to
-              promote your product or service online and help you.
+              Outsource your digital marketing efforts, instead of handling
+              in-house. They can provide your business with a variety of digital
+              solutions to promote your product or service online and help you.
             </p>
-          </blockquote>
-          <p>
-            Outsource your digital marketing efforts, instead of handling
-            in-house. They can provide your business with a variety of digital
-            solutions to promote your product or service online and help you.
-          </p>
-          <p>
-            Outsource your digital marketing efforts, instead of handling
-            in-house. They can provide your business with a variety of digital
-            solutions to promote your product or service online and help
-            you.business with a variety of digital solutions to promote your
-            product or service online and help you.Outsource your digital
-            marketing efforts, instead of handling in-house. They can provide
-            your business with a variety of digital solutions to promote your
-            product or service online and help you.business with a variety of
-            digital solutions to promote your product or service online and help
-            you.
-          </p>
+            <h4>Promote your product</h4>
+            <p>
+              Ability to put themselves in the merchant's shoes. It is meant to
+              partner on the long run, and work as an extension of the
+              merchant's team.
+            </p>
+            <div className="our-qualities">
+              <span>Digital Marketing</span>
+              <span>Efforts instead</span>
+              <span>Handling in-house</span>
+            </div>
+            <p>
+              A digital agency is a business you hire to outsource your digital
+              marketing efforts, instead of handling in-house. They can provide
+              your business with a variety of digital solutions to promote your
+              product or service online and help you.
+            </p>
+            <h4>Service online and help</h4>
+            <p>
+              Put themselves in the merchant's shoes. It is meant to partner on
+              the long run, and work as an extension of the merchant's team.
+            </p>
+            <p>1. Marketing efforts</p>
+            <p>2. Instead of handling</p>
+            <p>3. n-house</p>
+            <p>
+              Agency is a business you hire to outsource your digital marketing
+              efforts, instead of handling in-house. They can provide your
+              business with a variety of digital solutions to promote your
+              product or service online and help you.
+            </p>
+            <blockquote cite="">
+              <img src={bloquoteShape} alt="" />
+              <p>
+                Provide your business with a variety of digital solutions to
+                promote your product or service online and help you.
+              </p>
+            </blockquote>
+            <p>
+              Outsource your digital marketing efforts, instead of handling
+              in-house. They can provide your business with a variety of digital
+              solutions to promote your product or service online and help you.
+            </p>
+            <p>
+              Outsource your digital marketing efforts, instead of handling
+              in-house. They can provide your business with a variety of digital
+              solutions to promote your product or service online and help
+              you.business with a variety of digital solutions to promote your
+              product or service online and help you.Outsource your digital
+              marketing efforts, instead of handling in-house. They can provide
+              your business with a variety of digital solutions to promote your
+              product or service online and help you.business with a variety of
+              digital solutions to promote your product or service online and
+              help you.
+            </p>
+          </Fade>
         </ArticleDetailsMainContent>
         <ArticleDetailsAside>
           <ArticleDetailsAsideTitle>Popular Article</ArticleDetailsAsideTitle>

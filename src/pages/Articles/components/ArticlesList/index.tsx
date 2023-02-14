@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Pulse from 'react-reveal/Pulse';
+
 import { ArticleProps } from '../../../../@types/article';
 import { Article } from '../../../../components/Article';
 import { Button } from '../../../../components/Button';
@@ -94,13 +96,15 @@ export const ArticleList = ({ ...props }: IArticleListProps) => {
 
       <ArticleListContent>
         {articleToShow.map((article, index) => (
-          <ArticleListIten key={index} to={`/article/${article.id}`}>
-            <Article
-              description={article.description}
-              image={article.image}
-              title={article.title}
-            />
-          </ArticleListIten>
+          <Pulse>
+            <ArticleListIten key={index} to={`/article/${article.id}`}>
+              <Article
+                description={article.description}
+                image={article.image}
+                title={article.title}
+              />
+            </ArticleListIten>
+          </Pulse>
         ))}
       </ArticleListContent>
       <div className="button">

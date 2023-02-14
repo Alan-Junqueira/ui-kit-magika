@@ -1,3 +1,5 @@
+import Fade from 'react-reveal/Fade';
+
 import styled from 'styled-components';
 
 import { Banner } from '../../components/Banner';
@@ -18,9 +20,11 @@ export const AboutUs = () => {
     <AboutUsContainer>
       <AboutUsHero id="about-us-hero" />
       <HeroCards id="about-us-hero-cards" />
-      <OurWayTeaching id="about-our-way-teaching" />
-      <Founders id="about-us-founders" />
-      <BetterGeneration id="about-us-better-generation" />
+      <Fade left>
+        <OurWayTeaching id="about-our-way-teaching" />
+        <Founders id="about-us-founders" />
+        <BetterGeneration id="about-us-better-generation" />
+      </Fade>
       <Banner variant="secondary" />
     </AboutUsContainer>
   );
