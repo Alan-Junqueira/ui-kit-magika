@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade';
+import React from 'react';
 import { Banner } from '../../components/Banner';
 import { ArticleList } from './components/ArticlesList';
 import { ArticleHero } from './components/Hero';
@@ -8,10 +8,8 @@ export const Articles = () => {
   return (
     <ArticlesContainer>
       <ArticleHero id="articles-page--hero" />
-      <Fade left>
-        <ArticleList id="articles-page--article-lists" />
-      </Fade>
-      <Banner variant="secondary" />
+      <ArticleList id="articles-page--article-lists"/>
+      <Banner variant='secondary'/>
     </ArticlesContainer>
   );
 };

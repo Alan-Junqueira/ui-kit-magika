@@ -1,5 +1,3 @@
-import Fade from 'react-reveal/Fade';
-
 import { Banner } from '../../components/Banner';
 
 import { GetToKnow } from './GetToKnow';
@@ -13,12 +11,10 @@ export const SoftwareEngineering = () => {
   return (
     <SoftwareEngineeringContainer>
       <SoftwareEngineeringHero id="software-engineering--hero" />
-      <Fade left>
-        <ThingsToLearn id="software-engineering--things-to-learn" />
-        <GetToKnow id="software-engineering--get-to-know" />
-        <Mentors id="software-engineering--mentors" />
-        <Schedule id="software-engineering--schedule" />
-      </Fade>
+      <ThingsToLearn id="software-engineering--things-to-learn" />
+      <GetToKnow id="software-engineering--get-to-know" />
+      <Mentors id="software-engineering--mentors" />
+      <Schedule id="software-engineering--schedule" />
       <Banner variant="secondary" />
     </SoftwareEngineeringContainer>
   );

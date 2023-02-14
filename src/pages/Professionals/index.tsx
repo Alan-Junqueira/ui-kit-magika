@@ -1,5 +1,4 @@
-import Fade from 'react-reveal/Fade';
-
+import React from 'react';
 import { Banner } from '../../components/Banner';
 import { ProfessionalsHero } from './Hero';
 import { ProfessionalsContainer } from './styled';
@@ -10,10 +9,8 @@ export const Professionals = () => {
   return (
     <ProfessionalsContainer>
       <ProfessionalsHero id="professionals--hero" />
-      <Fade left>
-        <Teachers id="professionals--teachers" />
-        <TeachMethods id="professionals--teach-methods" />
-      </Fade>
+      <Teachers id="professionals--teachers" />
+      <TeachMethods id="professionals--teach-methods" />
       <Banner variant="secondary" />
     </ProfessionalsContainer>
   );
