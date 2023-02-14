@@ -10,11 +10,11 @@ import {
   InformaticHeroTitle
 } from './styled';
 
-import womanHeroImage from '/assets/images/programs-informatic-engineering-hero-woman.png';
+import womanHeroImage from '/assets/images/programs-informatics-engineering-hero-woman.png';
 
 interface IInformaticHero extends SectionInterface {}
 
-export const InformaticHero = ({
+export const InformaticsHero = ({
   ...props
 }: IInformaticHero) => {
   return (

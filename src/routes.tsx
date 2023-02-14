@@ -9,6 +9,7 @@ import { Contact } from './pages/Contact';
 import { Programs } from './pages/Programs';
 import { Carrer } from './pages/Carrer';
 import { InformaticsEngineering } from './pages/InformaticEngineering';
+import { SoftwareEngineering } from './pages/SoftEngineering';
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,10 @@ const AppRoutes = () => {
       <Route
         path="/programs/informatics-engineerings"
         element={<InformaticsEngineering />}
+      />
+      <Route
+        path="/programs/software-engineerings"
+        element={<SoftwareEngineering />}
       />
       <Route path="/carrer" element={<Carrer />} />
       <Route path="*" element={<NotFound />} />
