@@ -10,6 +10,7 @@ import { Programs } from './pages/Programs';
 import { Carrer } from './pages/Carrer';
 import { InformaticsEngineering } from './pages/InformaticEngineering';
 import { SoftwareEngineering } from './pages/SoftEngineering';
+import { Professionals } from './pages/Professionals';
 
 const AppRoutes = () => {
   return (
@@ -18,7 +19,9 @@ const AppRoutes = () => {
       <Route path="/about" element={<AboutUs />} />
       <Route path="/article" element={<Articles />} />"
       <Route path="/article/:id" element={<Article />} />"
+      <Route path="/carrer" element={<Carrer />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/professionals" element={<Professionals />} />
       <Route path="/programs" element={<Programs />} />
       <Route
         path="/programs/informatics-engineerings"
@@ -28,7 +31,6 @@ const AppRoutes = () => {
         path="/programs/software-engineerings"
         element={<SoftwareEngineering />}
       />
-      <Route path="/carrer" element={<Carrer />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

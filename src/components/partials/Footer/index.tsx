@@ -55,16 +55,16 @@ export const Footer = () => {
           <ul>
             <span>Pages</span>
             <li>
-              <a href="">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">Portfolios</a>
+              <a href="">Portfolios</a>
             </li>
             <li>
-              <a href="/">Services</a>
+              <a href="">Services</a>
             </li>
             <li>
-              <a href="/">Works</a>
+              <a href="">Works</a>
             </li>
             <li>
               <Link to="/carrer">Carrer</Link>
@@ -73,31 +73,31 @@ export const Footer = () => {
           <ul>
             <span>Company</span>
             <li>
-              <a href="/">Terms Conditions</a>
+              <a href="">Terms Conditions</a>
             </li>
             <li>
-              <a href="/">Privacy Policy</a>
+              <a href="">Privacy Policy</a>
             </li>
             <li>
-              <a href="/">Cookies</a>
+              <a href="">Cookies</a>
             </li>
             <li>
-              <a href="/">Careers</a>
+              <a href="">Careers</a>
             </li>
           </ul>
           <ul>
             <span>Community</span>
             <li>
-              <a href="/">Help Center</a>
+              <a href="">Help Center</a>
             </li>
             <li>
-              <a href="/">Forum</a>
+              <a href="">Forum</a>
             </li>
             <li>
-              <a href="/">Webinars</a>
+              <a href="">Webinars</a>
             </li>
             <li>
-              <a href="">Professionals</a>
+              <a href="/professionals">Professionals</a>
             </li>
           </ul>
         </FooterNavigation>
