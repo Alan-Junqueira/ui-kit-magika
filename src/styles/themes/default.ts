@@ -31,8 +31,14 @@ export const defaultTheme = {
     'yellow-200': '#FFC700',
     'gray-100': ' #51535e',
     'gray-200': '#3A3C56',
+    'gray-400': '#12141D',
     'gray-500': '#bababa',
-    'gray-600': '#181818'
+    'gray-600': '#181818',
+
+    'bg-teacher-100': "rgba(229, 94, 94, 0.2)",
+    'bg-teacher-200': "rgba(105, 94, 229, 0.2)",
+    'bg-teacher-300': "rgba(229, 223, 94, 0.2)",
+    'bg-teacher-400': "rgba(94, 148, 229, 0.2)",
   },
   shadow: {
     button: 'rgba(246, 87, 20, 0.3)'
